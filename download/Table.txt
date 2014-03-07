@@ -1,0 +1,68 @@
+<table class="wikitable" style="font-size:85%">
+<tr>
+<th width="200px">国家名称</th>
+<th width="200px">英文名称</th>
+<th width="400px">国家简介</th>
+</tr>
+<tr>
+<td><a href="/wiki/File:Flag_of_the_Federated_States_of_Micronesia.svg" class="image"><img alt="Flag of the Federated States of Micronesia.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Flag_of_the_Federated_States_of_Micronesia.svg/25px-Flag_of_the_Federated_States_of_Micronesia.svg.png" width="25" height="13" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Flag_of_the_Federated_States_of_Micronesia.svg/38px-Flag_of_the_Federated_States_of_Micronesia.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Flag_of_the_Federated_States_of_Micronesia.svg/50px-Flag_of_the_Federated_States_of_Micronesia.svg.png 2x" /></a> <a href="/wiki/%E5%AF%86%E5%85%8B%E7%BD%97%E5%B0%BC%E8%A5%BF%E4%BA%9A%E8%81%94%E9%82%A6%E5%9B%BD%E5%AE%B6%E8%B6%B3%E7%90%83%E9%98%9F" title="密克罗尼西亚联邦国家足球队">密克罗尼西亚联邦</a></td>
+<td>Federated States of Micronesia</td>
+<td>位于<a href="/wiki/%E5%A4%AA%E5%B9%B3%E6%B4%8B" title="太平洋">太平洋</a>上的一个岛国</td>
+</tr>
+<tr>
+<td><a href="/wiki/File:Flag_of_Abkhazia.svg" class="image"><img alt="Flag of Abkhazia.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/27/Flag_of_Abkhazia.svg/25px-Flag_of_Abkhazia.svg.png" width="25" height="13" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/27/Flag_of_Abkhazia.svg/38px-Flag_of_Abkhazia.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/27/Flag_of_Abkhazia.svg/50px-Flag_of_Abkhazia.svg.png 2x" /></a> <a href="/w/index.php?title=%E9%98%BF%E5%B8%83%E5%93%88%E8%8C%B2%E8%B6%B3%E7%90%83%E4%BB%A3%E8%A1%A8%E9%9A%8A&amp;action=edit&amp;redlink=1" class="new" title="阿布哈兹足球代表队（页面不存在）">阿布哈兹</a></td>
+<td>Abkhazia</td>
+<td>本是格鲁吉亚的自治共和国，1992年7月23日阿布哈兹宣布独立，现时仅<a href="/wiki/%E4%BF%84%E7%BE%85%E6%96%AF" title="俄罗斯" class="mw-redirect">俄罗斯</a>和<a href="/wiki/%E5%B0%BC%E5%8A%A0%E6%8B%89%E7%93%9C" title="尼加拉瓜">尼加拉瓜</a>宣布承认其独立。</td>
+</tr>
+<tr>
+<td><a href="/wiki/File:Flag_of_the_Falkland_Islands.svg" class="image"><img alt="Flag of the Falkland Islands.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_Falkland_Islands.svg/25px-Flag_of_the_Falkland_Islands.svg.png" width="25" height="13" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_Falkland_Islands.svg/38px-Flag_of_the_Falkland_Islands.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_Falkland_Islands.svg/50px-Flag_of_the_Falkland_Islands.svg.png 2x" /></a> <a href="/w/index.php?title=%E7%A6%8F%E5%85%8B%E8%98%AD%E7%BE%A4%E5%B3%B6%E8%B6%B3%E7%90%83%E4%BB%A3%E8%A1%A8%E9%9A%8A&amp;action=edit&amp;redlink=1" class="new" title="福克兰群岛足球代表队（页面不存在）">福克兰群岛</a></td>
+<td>Falkland Islands</td>
+<td>现时属于<a href="/wiki/%E8%8B%B1%E5%9C%8B" title="英国" class="mw-redirect">英国</a>的一个<a href="/wiki/%E6%B5%B7%E5%A4%96%E9%A0%98%E5%9C%B0" title="海外领地" class="mw-redirect">海外领地</a>。</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="/wiki/File:Flag_of_Guernsey.svg" class="image"><img alt="Flag of Guernsey.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_Guernsey.svg/25px-Flag_of_Guernsey.svg.png" width="25" height="17" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_Guernsey.svg/38px-Flag_of_Guernsey.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_Guernsey.svg/50px-Flag_of_Guernsey.svg.png 2x" /></a> <a href="/w/index.php?title=%E6%A0%B9%E6%81%AF%E5%B3%B6%E8%B6%B3%E7%90%83%E4%BB%A3%E8%A1%A8%E9%9A%8A&amp;action=edit&amp;redlink=1" class="new" title="根息岛足球代表队（页面不存在）">根息岛</a></td>
+<td>Guernsey</td>
+<td>现时属于<a href="/wiki/%E8%8B%B1%E5%9C%8B" title="英国" class="mw-redirect">英国</a>的一个海外领地，位于<a href="/wiki/%E8%8B%B1%E5%90%89%E5%88%A9%E6%B5%B7%E5%B3%BD" title="英吉利海峡" class="mw-redirect">英吉利海峡</a>的海峡群岛之中</td>
+</tr>
+<tr>
+<td><a href="/wiki/File:Flag_of_the_Isle_of_Man.svg" class="image"><img alt="Flag of the Isle of Man.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_the_Isle_of_Man.svg/25px-Flag_of_the_Isle_of_Man.svg.png" width="25" height="13" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_the_Isle_of_Man.svg/38px-Flag_of_the_Isle_of_Man.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_the_Isle_of_Man.svg/50px-Flag_of_the_Isle_of_Man.svg.png 2x" /></a> <a href="/w/index.php?title=%E8%90%8C%E5%B3%B6%E8%B6%B3%E7%90%83%E4%BB%A3%E8%A1%A8%E9%9A%8A&amp;action=edit&amp;redlink=1" class="new" title="马恩岛足球代表队（页面不存在）">马恩岛</a></td>
+<td>Isle of Man</td>
+<td>现时属于<a href="/wiki/%E8%8B%B1%E5%9C%8B" title="英国" class="mw-redirect">英国</a>的一个<a href="/wiki/%E6%B5%B7%E5%A4%96%E9%A0%98%E5%9C%B0" title="海外领地" class="mw-redirect">海外领地</a>。</td>
+</tr>
+<tr>
+<td><a href="/wiki/File:Flag_of_Jersey.svg" class="image"><img alt="Flag of Jersey.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Flag_of_Jersey.svg/25px-Flag_of_Jersey.svg.png" width="25" height="15" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Flag_of_Jersey.svg/38px-Flag_of_Jersey.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Flag_of_Jersey.svg/50px-Flag_of_Jersey.svg.png 2x" /></a> <a href="/w/index.php?title=%E6%BE%A4%E8%A5%BF%E5%B3%B6%E8%B6%B3%E7%90%83%E4%BB%A3%E8%A1%A8%E9%9A%8A&amp;action=edit&amp;redlink=1" class="new" title="泽西岛足球代表队（页面不存在）">泽西岛</a></td>
+<td>Jersey</td>
+<td>现时属于<a href="/wiki/%E8%8B%B1%E5%9C%8B" title="英国" class="mw-redirect">英国</a>的一个<a href="/wiki/%E6%B5%B7%E5%A4%96%E9%A0%98%E5%9C%B0" title="海外领地" class="mw-redirect">海外领地</a>。</td>
+</tr>
+<tr>
+<td><a href="/wiki/File:Flag_of_Mayotte_(local).svg" class="image"><img alt="Flag of Mayotte (local).svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Flag_of_Mayotte_%28local%29.svg/25px-Flag_of_Mayotte_%28local%29.svg.png" width="25" height="17" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Flag_of_Mayotte_%28local%29.svg/38px-Flag_of_Mayotte_%28local%29.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Flag_of_Mayotte_%28local%29.svg/50px-Flag_of_Mayotte_%28local%29.svg.png 2x" /></a> <a href="/w/index.php?title=%E9%A6%AC%E7%B4%84%E7%89%B9%E8%B6%B3%E7%90%83%E4%BB%A3%E8%A1%A8%E9%9A%8A&amp;action=edit&amp;redlink=1" class="new" title="马约特足球代表队（页面不存在）">马约特</a></td>
+<td>Mayotte</td>
+<td>现时属于<a href="/wiki/%E6%B3%95%E5%9C%8B" title="法国" class="mw-redirect">法国</a>的一个海外领地，位于<a href="/wiki/%E8%8E%AB%E6%A1%91%E6%AF%94%E5%85%8B%E6%B5%B7%E5%B3%BD" title="莫桑比克海峡" class="mw-redirect">莫桑比克海峡</a>的北部。</td>
+</tr>
+<tr>
+<td><a href="/wiki/File:SPM_Flag.png" class="image"><img alt="SPM Flag.png" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/c8/SPM_Flag.png/25px-SPM_Flag.png" width="25" height="17" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c8/SPM_Flag.png/38px-SPM_Flag.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c8/SPM_Flag.png/50px-SPM_Flag.png 2x" /></a> <a href="/w/index.php?title=%E8%81%96%E7%9A%AE%E5%9F%83%E7%88%BE%E5%92%8C%E5%AF%86%E5%85%8B%E9%9A%86%E7%BE%A4%E5%B3%B6%E8%B6%B3%E7%90%83%E4%BB%A3%E8%A1%A8%E9%9A%8A&amp;action=edit&amp;redlink=1" class="new" title="圣皮埃尔和密克隆群岛足球代表队（页面不存在）">圣皮埃尔和密克隆群岛</a></td>
+<td>Saint Pierre et Miquelon</td>
+<td>现时属于<a href="/wiki/%E6%B3%95%E5%9C%8B" title="法国" class="mw-redirect">法国</a>的一个海外领地。</td>
+</tr>
+<tr>
+<td><a href="/wiki/File:Flag_of_South_Ossetia.svg" class="image"><img alt="Flag of South Ossetia.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/12/Flag_of_South_Ossetia.svg/25px-Flag_of_South_Ossetia.svg.png" width="25" height="13" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/12/Flag_of_South_Ossetia.svg/38px-Flag_of_South_Ossetia.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/12/Flag_of_South_Ossetia.svg/50px-Flag_of_South_Ossetia.svg.png 2x" /></a> <a href="/w/index.php?title=%E5%8D%97%E5%A5%A7%E5%A1%9E%E6%A2%AF%E8%B6%B3%E7%90%83%E4%BB%A3%E8%A1%A8%E9%9A%8A&amp;action=edit&amp;redlink=1" class="new" title="南奥塞梯足球代表队（页面不存在）">南奥塞梯</a></td>
+<td>South Ossetia</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="/wiki/File:Flag_of_Wallis_and_Futuna.svg" class="image"><img alt="Flag of Wallis and Futuna.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Flag_of_Wallis_and_Futuna.svg/25px-Flag_of_Wallis_and_Futuna.svg.png" width="25" height="17" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Flag_of_Wallis_and_Futuna.svg/38px-Flag_of_Wallis_and_Futuna.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Flag_of_Wallis_and_Futuna.svg/50px-Flag_of_Wallis_and_Futuna.svg.png 2x" /></a> <a href="/w/index.php?title=%E7%93%A6%E5%88%A9%E6%96%AF%E5%8F%8A%E5%AF%8C%E5%9C%96%E7%B4%8D%E7%BE%A4%E5%B3%B6%E8%B6%B3%E7%90%83%E4%BB%A3%E8%A1%A8%E9%9A%8A&amp;action=edit&amp;redlink=1" class="new" title="瓦利斯及富图纳群岛足球代表队（页面不存在）">瓦利斯及富图纳群岛</a></td>
+<td>Wallis and Futuna</td>
+<td>位于<a href="/wiki/%E5%A4%A7%E6%B4%8B%E6%B4%B2" title="大洋洲">大洋洲</a>的一个群岛</td>
+</tr>
+<tr>
+<td><a href="/wiki/File:Flag_of_Christmas_Island.svg" class="image"><img alt="Flag of Christmas Island.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/67/Flag_of_Christmas_Island.svg/25px-Flag_of_Christmas_Island.svg.png" width="25" height="13" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/67/Flag_of_Christmas_Island.svg/38px-Flag_of_Christmas_Island.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/67/Flag_of_Christmas_Island.svg/50px-Flag_of_Christmas_Island.svg.png 2x" /></a> <a href="/w/index.php?title=%E8%81%96%E8%AA%95%E5%B3%B6%E8%B6%B3%E7%90%83%E4%BB%A3%E8%A1%A8%E9%9A%8A&amp;action=edit&amp;redlink=1" class="new" title="圣诞岛足球代表队（页面不存在）">圣诞岛</a></td>
+<td>Christmas Island</td>
+<td>现时属于<a href="/wiki/%E6%BE%B3%E6%B4%B2" title="澳洲" class="mw-redirect">澳洲</a>的一个<a href="/wiki/%E6%B5%B7%E5%A4%96%E9%A0%98%E5%9C%B0" title="海外领地" class="mw-redirect">海外领地</a>。</td>
+</tr>
+<tr>
+<td><a href="/wiki/File:Flag_of_the_Cocos_(Keeling)_Islands.svg" class="image"><img alt="Flag of the Cocos (Keeling) Islands.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/74/Flag_of_the_Cocos_%28Keeling%29_Islands.svg/25px-Flag_of_the_Cocos_%28Keeling%29_Islands.svg.png" width="25" height="13" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/74/Flag_of_the_Cocos_%28Keeling%29_Islands.svg/38px-Flag_of_the_Cocos_%28Keeling%29_Islands.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/74/Flag_of_the_Cocos_%28Keeling%29_Islands.svg/50px-Flag_of_the_Cocos_%28Keeling%29_Islands.svg.png 2x" /></a> <a href="/w/index.php?title=%E7%A7%91%E7%A7%91%E6%96%AF(%E5%9F%BA%E6%9E%97)%E7%BE%A4%E5%B3%B6%E8%B6%B3%E7%90%83%E4%BB%A3%E8%A1%A8%E9%9A%8A&amp;action=edit&amp;redlink=1" class="new" title="科科斯(基林)群岛足球代表队（页面不存在）">科科斯(基林)群岛</a></td>
+<td>Cocos (Keeling) Islands</td>
+<td>现时属于<a href="/wiki/%E6%BE%B3%E6%B4%B2" title="澳洲" class="mw-redirect">澳洲</a>的一个<a href="/wiki/%E6%B5%B7%E5%A4%96%E9%A0%98%E5%9C%B0" title="海外领地" class="mw-redirect">海外领地</a>。</td>
+</tr>
+</table>
