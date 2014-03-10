@@ -21,6 +21,13 @@ string DownLoadPage(string LinkURL)
 	struct hostent *hop;
 	struct in_addr ipAddr;
 
+	//先查看是否含有url <scheme>字段
+	if(LinkURL.find("http")!=string::npos ||
+		LinkURL.find("ftp")!=string::npos)
+	{
+		cout << "要去掉协议头字段"  << endl;
+	}
+
 	string s = "error";
 	string PageSrc;  //存储下载的网页
 
