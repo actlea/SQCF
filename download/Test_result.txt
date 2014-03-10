@@ -1,0 +1,221 @@
+国家名称,英文名称,简称[1],成立年份,加入FIFA年份,加入AFC年份,地区足协/un 
+阿富汗,Afghanistan,AFG,1933年,1948年,1954年,CSAFF/un 
+澳大利亚,Australia,AUS,1961年,1963年,2006年[2],ASEAN/un 
+巴林,Bahrain,BHR,1957年,1966年,1969年,WAFF/un 
+孟加拉国,Bangladesh,BAN,1972年,1974年,1974年,CSAFF/un 
+不丹,Bhutan,BHU,1983年,2000年,1993年,CSAFF/un 
+文莱,Brunei Darussalam,BRU,1956年,1969年,1970年,ASEAN/un 
+柬埔寨,Cambodian,CAM,1933年,1953年,1957年,ASEAN/un 
+中国,China/ People's Republic of,CHN,1924年,1931年,1974年,EAFF/un 
+中华台北[3],Chinese Taipei,TPE,1924年,1954年,1955年[4],EAFF/un 
+关岛,Guam,GUM,1975年,1996年,1992年,EAFF/un 
+香港,Hong Kong China,HKG,1914年,1954年,1954年,EAFF/un 
+印度,India,IND,1937年,1948年,1954年,CSAFF/un 
+印尼,Indonesia,IDN,1930年,1952年,1954年,ASEAN/un 
+伊朗,Iran,IRN,1920年,1945年,1958年,CSAFF/un 
+伊拉克,Iraq,IRQ,1948年,1950年,1971年,WAFF/un 
+日本,Japan,JPN,1921年,1929年,1954年,EAFF/un 
+约旦,Jordan,JOR,1949年,1958年,1974年,WAFF/un 
+朝鲜,Korea DPR,PRK,1945年,1958年,1954年,EAFF/un 
+韩国,Korea Republic,KOR,1928年,1948年,1954年,EAFF/un 
+科威特,Kuwait,KUW,1952年,1962年,1962年,WAFF/un 
+吉尔吉斯,Kyrgyzstan,KGZ,1992年,1994年,1994年,CSAFF/un 
+老挝,Laos,LAO,1951年,1952年,1980年,ASEAN/un 
+黎巴嫩,Lebanon,LIB,1933年,1935年,1964年,WAFF/un 
+澳门,Macau China,MAC,1939年,1978年,1976年,EAFF/un 
+马来西亚,Malaysia,MAS,1933年,1956年,1954年,ASEAN/un 
+马尔代夫,Maldives,MDV,1982年,1986年,1986年,CSAFF/un 
+蒙古国,Mongolia,MGL,1959年,1998年,1998年,EAFF/un 
+缅甸,Myanmar,MYA,1947年,1957年,1954年,ASEAN
+尼泊尔,Nepal,NEP,1951年,1970年,1971年,CSAFF/un 
+阿曼,Oman,OMA,1978年,1980年,1979年,WAFF/un 
+巴基斯坦,Pakistan,PAK,1947年,1948年,1954年,CSAFF/un 
+ 巴勒斯坦,Palestine,PAL,1962年,1998年,1998年,WAFF/un 
+菲律宾,Philippines,PHI,1907年,1928年,1954年,ASEAN/un 
+卡塔尔,Qatar,QAT,1960年,1970年,1972年,WAFF/un 
+沙特阿拉伯,Saudi Arabia,KSA,1959年,1959年,1959年,WAFF/un 
+新加坡,Singapore,SIN,1892年,1952年,1952年,ASEAN/un 
+斯里兰卡,Sri Lanka,SRI,1939年,1950年,1969年,CSAFF/un 
+叙利亚,Syria,SYR,1936年,1937年,1969年,WAFF/un 
+塔吉克斯坦,Tajikistan,TJK,1936年,1994年,1994年,CSAFF/un 
+泰国,Thailand,THA,1916年,1925年,1957年,ASEAN/un 
+东帝汶,Timor-Leste,TLS,2002年,2005年,2002年,ASEAN/un 
+土库曼斯坦,Turkmenistan,TKM,1992年,1994年,1994年,CSAFF/un 
+阿联酋,United Arab Emirates,UAE,1971年,1972年,1974年,WAFF/un 
+乌兹别克斯坦,Uzbekistan,UZB,1946年,1994年,1994年,CSAFF/un 
+越南,Vietnam,VIE,1962年,1964年,1964年,ASEAN/un 
+也门,Yemen,YEM,1962年,1980年,1962年,WAFF/un 
+
+国家名称,英文名称,简称[1],成立年份,加入FIFA年份,加入CAF年份/un 
+阿尔及利亚,Algeria,ALG,1962年,1963年,1964年/un 
+安哥拉,Angola,ANG,1979年,1980年,1980年/un 
+贝宁,Benin,BEN,1962年,1962年,1969年/un 
+博茨瓦纳,Botswana,BOT,1970年,1978年,1976年/un 
+布基纳法索,Burkina Faso,BFA,1960年,1964年,1964年/un 
+布隆迪,Burundi,BDI,1948年,1972年,1972年/un 
+喀麦隆,Cameroon,CMR,1959年,1962年,1963年/un 
+佛得角,Cape Verde,CPV,1982年,1986年,1986年/un 
+中非共和国,Central African Republic,CTA,1961年,1963年,1965年/un 
+乍得,Chad,CHA,1962年,1988年,1988年/un 
+科摩罗,Comoros,COM,1979年,2005年,2000年/un 
+刚果共和国,Congo,CGO,1962年,1962年,1966年/un 
+刚果民主共和国,Congo/ Democratic Republic of,COD,1919年,1962年,1963年/un 
+科特迪瓦,C?te d'Ivoire,CIV,1960年,1961年,1960年/un 
+吉布提,Djibouti,DJI,1979年,1994年,1994年/un 
+埃及,Egypt,EGY,1921年,1923年,1957年/un 
+赤道几内亚,Equatorial Guinea,EQG,1960年,1986年,1986年/un 
+厄立特里亚,Eritrea,ERI,1992年,1998年,1994年/un 
+埃塞俄比亚,Ethiopia,ETH,1943年,1953年,1957年/un 
+加蓬,Gabon,GAB,1962年,1963年,1967年/un 
+冈比亚,Gambia,GAM,1952年,1966年,1966年/un 
+加纳,Ghana,GHA,1957年,1958年,1958年/un 
+几内亚,Guinea,GUI,1960年,1961年,1962年/un 
+几内亚比绍,Guinea-Bissau,GNB,1974年,1986年,1986年/un 
+肯尼亚,Kenya,KEN,1960年,1960年,1968年/un 
+莱索托,Lesotho,LES,1932年,1964年,1964年/un 
+利比里亚,Liberia,LBR,1936年,1962年,1962年/un 
+利比亚,Libya,LBY,1962年,1963年,1965年/un 
+马达加斯加,Madagascar,MAD,1961年,1962年,1963年/un 
+马拉维,Malawi,MWI,1966年,1967年,1968年/un 
+马里,Mali,MLI,1960年,1962年,1963年/un 
+毛里塔尼亚,Mauritania,MTN,1961年,1964年,1968年/un 
+毛里求斯,Mauritius,MRI,1952年,1962年,1963年/un 
+摩洛哥,Morocco,MAR,1955年,1960年,1960年/un 
+莫桑比克,Mozambique,MOZ,1976年,1980年,1978年/un 
+纳米比亚,Namibia,NAM,1990年,1992年,1992年/un 
+尼日尔,Niger,NIG,1967年,1967年,1967年/un 
+尼日利亚,Nigeria,NGA,1945年,1959年,1959年/un 
+卢旺达,Rwanda,RWA,1972年,1978年,1976年/un 
+圣多美和普林西比,S?o Tomé and Príncipe,STP,1975年,1986年,1976年/un 
+塞内加尔,Senegal,SEN,1960年,1962年,1963年/un 
+塞舌尔,Seychelles,SEY,1979年,1986年,1986年/un 
+塞拉利昂,Sierra Leone,SLE,1967年,1967年,1967年/un 
+索马里,Somalia,SOM,1950年,1960年,1968年/un 
+南非,South Africa,RSA,1932年,1992年,1992年/un 
+南苏丹,South Sudan,RSA,2011年,2012年,2012年/un 
+苏丹,Sudan,SUD,1936年,1948年,1957年/un 
+斯威士兰,Swaziland,SWZ,1968年,1978年,1976年/un 
+坦桑尼亚,Tanzania,TAN,1930年,1964年,1964年/un 
+多哥,Togo,TOG,1960年,1962年,1963年/un 
+突尼斯,Tunisia,TUN,1956年,1960年,1960年/un 
+乌干达,Uganda,UGA,1924年,1959年,1959年/un 
+赞比亚,Zambia,ZAM,1929年,1964年,1964年/un 
+津巴布韦,Zimbabwe,ZIM,1965年,1965年,1980年/un 
+
+国家名称,英文名称,简称[1],成立年份,加入FIFA年份,加入CONCACAF年份,地区足协/un 
+安圭拉,Anguilla,AIA,1990年,1996年,1994年,CCCF/un 
+安提瓜和巴布达,Antigua and Barbuda,ATG,1928年,1970年,1972年,CCCF/un 
+阿鲁巴,Aruba,ARU,1932年,1988年,1988年,CCCF/un 
+巴哈马,Bahamas,BAH,1967年,1968年,1981年,CCCF/un 
+巴巴多斯,Barbados,BRB,1910年,1968年,1968年,CCCF/un 
+伯利兹,Belize,BLZ,1980年,1986年,1986年,UNCAF/un 
+百慕大,Bermuda,BER,1928年,1962年,1962年,CCCF/un 
+英属维尔京群岛,British Virgin Islands,VGB,1974年,1996年,1996年,CCCF/un 
+加拿大,Canada,CAN,1912年,1913年,1961年,NAFU/un 
+开曼群岛,Cayman Islands,CAY,1966年,1992年,1992年,CCCF/un 
+哥斯达黎加,Costa Rica,CRC,1921年,1927年,1962年,UNCAF/un 
+古巴,Cuba,CUB,1924年,1932年,1961年,CCCF/un 
+ 库拉索,Cura?ao,CUW,2010年,2011年,2010年,CCCF/un 
+多米尼克,Dominica,DMA,1970年,1994年,1994年,CCCF/un 
+多米尼加共和国,Dominican Republic,DOM,1953年,1958年,1964年,CCCF/un 
+萨尔瓦多,El Salvador,SLV,1935年,1938年,1962年,UNCAF/un 
+格林纳达,Grenada,GRN,1924年,1978年,1969年,CCCF/un 
+危地马拉,Guatemala,GUA,1919年,1946年,1961年,UNCAF/un 
+圭亚那,Guyana,GUY,1902年,1968年,1961年,CCCF/un 
+海地,Haiti,HAI,1904年,1933年,1961年,CCCF/un 
+洪都拉斯,Honduras,HON,1951年,1951年,1961年,UNCAF/un 
+牙买加,Jamaica,JAM,1910年,1962年,1965年,CCCF/un 
+墨西哥,Mexico,MEX,1927年,1929年,1961年,NAFU/un 
+蒙特塞拉特岛,Montserrat,MSR,1973年,1996年,1994年,CCCF/un 
+尼加拉瓜,Nicaragua,NCA,1931年,1950年,1968年,UNCAF/un 
+巴拿马,Panama,PAN,1937年,1938年,1961年,UNCAF/un 
+波多黎各,Puerto Rico,PUR,1940年,1960年,1960年,CCCF/un 
+圣基茨和尼维斯,Saint Kitts and Nevis,SKN,1932年,1992年,1990年,CCCF/un 
+圣卢西亚,Saint Lucia,LCA,1979年,1988年,1965年,CCCF/un 
+圣文森特和格林纳丁斯,<small>Saint Vincent and the Grenadines</small>,VIN,1979年,1988年,1988年,CCCF/un 
+苏里南,Suriname,SUR,1920年,1929年,1965年,CCCF/un 
+特立尼达和多巴哥,Trinidad and Tobago,TRI,1908年,1963年,1962年,CCCF/un 
+特克斯与凯科斯群岛,Turks and Caicos Islands,TCA,1996年,1998年,1996年,CCCF/un 
+美属维尔京群岛,U.S. Virgin Islands,VIR,1992年,1998年,不详,CCCF/un 
+美国,USA,USA,1913年,1913年,1961年,NAFU/un 
+
+国家名称,英文名称,简称[1],成立年份,加入FIFA年份,加入CONMEBOL年份/un 
+阿根廷,Argentine,ARG,1893年,1912年,1916年/un 
+玻利维亚,Bolivia,BOL,1925年,1926年,1926年/un 
+巴西,Brazil,BRA,1914年,1923年,1916年/un 
+智利,Chile,CHI,1895年,1913年,1916年/un 
+哥伦比亚,Colombia,COL,1924年,1936年,1936年/un 
+厄瓜多尔,Ecuador,ECU,1925年,1926年,1927年/un 
+巴拉圭,Paraguay,PAR,1906年,1925年,1921年/un 
+秘鲁,Peru,PER,1922年,1924年,1925年/un 
+乌拉圭,Uruguay,URU,1900年,1923年,1916年/un 
+委内瑞拉,Venezuela,VEN,1926年,1952年,1952年/un 
+
+国家名称,英文名称,简称[1],成立年份,加入FIFA年份,加入OFC年份/un 
+美属萨摩亚,American Samoa,ASA,1984年,1998年,1998年/un 
+库克群岛,Cook Islands,COK,1971年,1994年,1994年/un 
+斐济,Fiji,FIJ,1938年,1963年,1966年/un 
+新喀里多尼亚,New Caledonia,NCL,1928年,2004年,1969年/un 
+新西兰1,New Zealand,NZL,1891年,1948年,1966年/un 
+巴布亚新几内亚,Papua New Guinea,PNG,1962年,1963年,1966年/un 
+萨摩亚,Samoa,SAM,1968年,1986年,1984年/un 
+所罗门群岛,Solomon Islands,SOL,1978年,1988年,1988年/un 
+法属波利尼西亚,Tahiti 2,TAH,1938年,1990年,1990年/un 
+汤加,Tonga,TGA,1965年,1994年,1994年/un 
+瓦努阿图,Vanuatu,VAN,1934年,1988年,1988年/un 
+
+国家名称,英文名称,简称[1],成立年份,加入FIFA年份,加入UEFA年份/un 
+阿尔巴尼亚,Albania,ALB,1930年,1932年,1954年/un 
+安道尔,Andorra,AND,1994年,1996年,1994年/un 
+亚美尼亚,Armenia,ARM,1992年,1992年,1993年/un 
+奥地利,Austria,AUT,1904年,1905年,1954年/un 
+阿塞拜疆,Azerbaijan,AZE,1992年,1994年,1994年/un 
+白俄罗斯,Belarus,BLR,1989年,1992年,1993年/un 
+比利时,Belgium,BEL,1895年,1904年,1954年/un 
+波斯尼亚和黑塞哥维那,Bosnia and Herzegovina1,BIH,1992年,1996年,1996年/un 
+保加利亚,Bulgaria,BUL,1923年,1924年,1954年/un 
+克罗地亚,Croatia,CRO,1912年,1992年,1992年/un 
+塞浦路斯,Cyprus,CYP,1934年,1948年,1962年/un 
+捷克,Czech Republic,CZE,1901年,1907年,1994年/un 
+丹麦,Denmark,DEN,1889年,1904年,1954年/un 
+英格兰,England,ENG,1863年,1905年,1954年/un 
+爱沙尼亚,Estonia,EST,1921年,1923年,1992年/un 
+法罗群岛,Faroe Islands,FRO,1979年,1988年,1990年/un 
+芬兰,Finland,FIN,1907年,1908年,1954年/un 
+法国,France,FRA,1919年,1904年,1954年/un 
+格鲁吉亚,Georgia,GEO,1936年,1992年,1992年/un 
+德国,Germany,GER,1900年,1904年,1954年/un 
+直布罗陀2,Gibraltar,GIB,1895年,未加入,2013年/un 
+希腊,Greece,GRE,1926年,1927年,1954年/un 
+匈牙利,Hungary,HUN,1901年,1907年,1954年/un 
+冰岛,Iceland,ISL,1947年,1947年,1954年/un 
+以色列3,Israel,ISR,1928年,1929年,1994年/un 
+意大利,Italy,ITA,1898年,1905年,1954年/un 
+哈萨克斯坦4,Kazakhstan,KAZ,1914年,1994年,2004年/un 
+拉脱维亚,Latvia,LVA,1921年,1922年,1992年/un 
+列支敦士登,Liechtenstein,LIE,1934年,1974年,1992年/un 
+立陶宛,Lithuania,LTU,1922年,1923年,1992年/un 
+卢森堡,Luxembourg,LUX,1908年,1910年,1954年/un 
+马其顿共和国,Republic of Macedonia1,MKD,1949年,1994年,1994年/un 
+马耳他,Malta,MLT,1900年,1959年,1960年/un 
+摩尔多瓦,Moldova,MDA,1990年,1994年,1993年/un 
+黑山,Montenegro,MNE,2007年,2007年,2007年/un 
+荷兰,Netherlands,NED,1889年,1904年,1954年/un 
+北爱尔兰,Northern Ireland,NIR,1880年,1911年,1954年/un 
+挪威,Norway,NOR,1902年,1908年,1954年/un 
+波兰,Poland,POL,1919年,1923年,1955年/un 
+葡萄牙,Portugal,POR,1914年,1923年,1954年/un 
+爱尔兰共和国,Republic of Ireland6,IRL,1921年,1923年,1958年/un 
+罗马尼亚,Romania,ROU,1909年,1923年,1954年/un 
+俄罗斯,Russia,RUS,1912年,1912年,1992年/un 
+圣马力诺,San Marino,SMR,1931年,1988年,1988年/un 
+苏格兰,Scotland,SCO,1873年,1910年,1954年/un 
+塞尔维亚,Serbia,SRB,1919年,1921年,1954年/un 
+斯洛伐克,Slovakia,SVK,1938年,1994年,1993年/un 
+斯洛文尼亚,Slovenia,SVN,1920年,1992年,1992年/un 
+西班牙,Spain,ESP,1909年,1913年,1954年/un 
+瑞典,Sweden,SWE,1904年,1904年,1954年/un 
+瑞士,Switzerland,SUI,1895年,1904年,1954年/un 
+土耳其,Turkey,TUR,1923年,1923年,1962年/un 
+乌克兰,Ukraine,UKR,1991年,1992年,1992年/un 
+威尔士,Wales,WAL,1876年,1910年,1954年/un 
