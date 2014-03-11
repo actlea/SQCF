@@ -20,6 +20,10 @@
 #include<fstream>
 #include <deque>
 #include <set>
+#include <map>
+#include <vector>
+#include "Data.h"
+#include <time.h>
 
 #include"ICTCLAS50.h"
 #include "unity.h"
@@ -28,4 +32,5 @@
 #pragma comment(lib,"ws2_32.lib")
 #pragma comment(lib,"ICTCLAS50")
 using std::string;
+using std::vector;
 

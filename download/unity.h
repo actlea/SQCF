@@ -15,7 +15,7 @@ const string NFTPAGE = file + "nationalTeam.txt";	//NFT网页
 //网址
 const string wikiURL = "zh.wikipedia.org/zh-cn/%E5%9C%8B%E5%AE%B6%E8%B6%B3%E7%90%83%E9%9A%8A%E5%88%97%E8%A1%A8";
 const string NFTURL = "www.national-football-teams.com";	//提取国家名称，国旗图片和国家队球员
-const string SDNCOACH ="www.sodasoccer.com/summary/fifaRank.html";//搜达网国家队教练信息
+const string SDNCOACHURL ="www.sodasoccer.com/summary/fifaRank.html";//搜达网国家队教练信息
 #pragma endregion
 
 extern std::set<string> CTKey;//存放从用户定义的字典中的足球关键字

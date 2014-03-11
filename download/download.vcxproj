@@ -78,6 +78,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="download.h" />
+    <ClInclude Include="Data.h" />
     <ClInclude Include="ICTCLAS50.h" />
     <ClInclude Include="option.h" />
     <ClInclude Include="stdafx.h" />

@@ -80,3 +80,18 @@ URL UrlFlag(const string&url);
  其他：如果html文件中同一个url出现多次，则也只在map中插入一项
  */
 std::map<string,URL> GetHyperLinks(const string& source);
+
+/*************************************************************
+*Function:get info of national country team
+*input:source is page string
+		s_nteam is a struct to store the useful info
+		if the function succeffully finish,flag is assign to true
+*
+*/
+void CountryPage(const string& source, _sNTeam& s_nteam);
+
+//提取球员信息
+void PlayerPage(const string& source,_sPlayer& s_player);
+
+//获取date
+void GetDate(_sDate& Date);

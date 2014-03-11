@@ -20,7 +20,7 @@ string GetTag(const string& source, const string& bTag, const string& eTag,int f
 	if(adr1==string::npos
 		|| adr2 ==string::npos)
 	{
-		cout << "不含有标签" << endl;
+		//cout << "不含有标签" << endl;
 		return sContent;
 	}
 	if(flag==0)
@@ -37,8 +37,11 @@ string GetTag(const string& source, const string& bTag, const string& eTag,int f
 
 }
 
-//判断是否是我们需要的链接
-//一般LinkText的形式为<a ...>...</a>
+/******************************************
+	*Description:判断是否是我们需要的链接,
+	*			一般LinkText的形式为<a ...>...</a>
+	*Call:GetTag
+	*/
 bool JudgeFootballInfo(const string& LinkText)
 {
 	//查看href中的信息
@@ -215,7 +218,7 @@ void ExtractCountryCoach()
 	string value;
 	string str;
 	string::size_type pos;
-	ExtractTableDataFromUrl(SDNCOACH, COACHN);
+	ExtractTableDataFromUrl(SDNCOACHURL, COACHN);
 	
 	outer.open(NCOACHN,ios::app);
 	inner.open(COACHN);
@@ -354,7 +357,7 @@ URL UrlFlag(const string&url)
 	return urlF;
 }
 
-//提取网页中的超链接
+//提取网页中的超链接，并按类型进行归类
 std::map<string,URL> GetHyperLinks(const string& source)
 {
 	std::map<string,URL>linkMap;
@@ -363,12 +366,13 @@ std::map<string,URL> GetHyperLinks(const string& source)
 	URL e;
 	string element="";
 	string link; //链接文本
-	while(i=NextElement(source,i,"a",element)<srclen)
+	while((i=NextElement(source,i,"a",element))<srclen)
 	{
 		//先判断是否含有足球类链接，再决定是否提取
 		if(JudgeFootballInfo(element))
 		{
 			link = SelectURL(element);
+			e = UrlFlag(link);
 			//原链接集合中不包含link,则加入
 			if(!linkMap.count(link))
 			{
@@ -378,6 +382,33 @@ std::map<string,URL> GetHyperLinks(const string& source)
 
 	}//end while
 	return linkMap;
-	
+}
 
+void CountryPage(const string& source, _sNTeam& s_nteam)
+{
+	string pageSrc = source;
+//	string tabStr = ExtractDataToStr(pageSrc);
+	string file1 = "./Country/file1.txt";
+	ExtractTableDataFromUrl(source, file1);
+
+}
+
+
+
+//提取球员信息
+void PlayerPage(const string& source,_sPlayer& s_player)
+{
+	
+}
+
+//获取date
+void GetDate(_sDate& Date)
+{
+	time_t timer;
+	struct tm *tblock;
+	timer = time(NULL);/* get current time; same as: timer = time(&timer)  */
+	tblock = localtime(&timer);
+	Date._year = tblock->tm_year+1900;
+	Date._month = tblock->tm_mon+1;
+	Date._day = tblock->tm_mday;
 }
