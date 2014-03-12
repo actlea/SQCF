@@ -9,11 +9,12 @@ typedef struct _Player
 	string _cName;//中文名
 	string _eName;//英文名
 	string _imageLink;//照片
-	unsigned int _age;
-	unsigned int _height;
+	string _age;
+	string _height;
 	string _Nation;//国籍
 	string _clubName;//俱乐部
 	string _birthPlace;
+	string _position;//场上的位置
 }_sPlayer;
 
 

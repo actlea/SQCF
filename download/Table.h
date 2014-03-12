@@ -62,9 +62,7 @@ void ExtractTableDataFromUrl(const std::string &url, const std::string &tdPath);
 //从给定的html文件中提取满足要求的表格数据
 void ExtractTableDataFromFile(const std::string &htmlPath, const std::string &tdPath);
 
-//从下载好的网页中提取表格存入string中
-std::string ExtractDataToStr(string& str);
-std::string ExtractTableDataEx2(string& str);
+
 #endif // !TABLE_H
 
 

@@ -32,6 +32,7 @@ int main(int argc, char* argv[])
 	set<string> LinkSet; //存放已经处理过的出了队列的链接
 	set<string> AllLink; //存放已经处理过的或者没有处理过但是存在队列中的链接
 	map<string,URL>mPageLinks;//存储网页中所有相关的链接
+	set<string> ErrorLink; //专门存储网页下载失败的url地址
 
 	_sPlayer sPlayer;
 	_sNTeam sNTeam;
@@ -46,9 +47,14 @@ int main(int argc, char* argv[])
 
 	ofstream onfile;
 	onfile.open("./Country/tempLink.txt");
+
+	ofstream errorUrl;
+	onfile.open("./Country/errorUrl.txt");
+
 	ofstream ofile; //存储临时下载的网页
 	string filename;
 
+/*	
 	//处理队列种子，首先只下载
 	while(LinkQ.size()!=0)
 	{
@@ -67,23 +73,24 @@ int main(int argc, char* argv[])
 			LinkSet.insert(QueLink); //加入到已经处理的数据集
 			
 			//首先，下载网页
-			//PLAYER型网页单独处理
-			//if((UrlFlag(QueLink))==PLAYER)
-			//{
-			//	continue;
-			//}
 			/////////////////////////////////////
 			if((UrlFlag(QueLink))==PLAYER)
 			{
 				continue;
 			}
 			pageSrc = DownLoadPage(QueLink);
+			//网页下载失败，记录下载失败的url地址
 			if(pageSrc.compare("error")==0)
 			{
-				cout << QueLink << "...链接下载失败!" << endl;
+				//cout << QueLink << "...链接下载失败!" << endl;
+				if(!ErrorLink.count(QueLink))
+				{
+					ErrorLink.insert(QueLink);
+				}
 				pageSrc.clear();
 				QueLink.clear();
-				exit(-1);
+				continue;
+				//exit(-1);
 			}
 			//判断网页类型，如果是UTF-8,则转码
 			if(JudgeCode(pageSrc))
@@ -96,29 +103,22 @@ int main(int argc, char* argv[])
 				QueLink.erase(QueLink.find('\n'),1);
 			}
 			cout << "提取" << QueLink << " 中的链接" << endl;
-			/*
-			*判断是否为player链接,如果是则直接提取网页信息，然后返回
-			*否则，提取网页中的链接，存入map
-			*/
-			//if((UrlFlag(QueLink))==PLAYER)
-			//{
-			//	PlayerPage(pageSrc,sPlayer);
-			//	continue;
-			//}
+		
 			/*
 			*提取country和continent中的链接，并提取country网页中的信息
 			*/
-			mPageLinks = GetHyperLinks(pageSrc);//提取了pageSrc中的所有有用的网页链接，并进行了分类
-			map<string,URL>::iterator m_iter;
-			for(m_iter=mPageLinks.begin();m_iter!=mPageLinks.end();m_iter++)
-			{
-				URL e = m_iter->second;
-			
-				//将所有链接存入AllLink中
-				if(!AllLink.count(m_iter->first))
+		//	mPageLinks = GetHyperLinks(pageSrc);//提取了pageSrc中的所有有用的网页链接，并进行了分类
+		//	map<string,URL>::iterator m_iter;
+		//	for(m_iter=mPageLinks.begin();m_iter!=mPageLinks.end();m_iter++)
+		//	{
+		/*		URL e = m_iter->second;
+				string url=m_iter->first;
+				//将除player之外的链接存入AllLink中
+				if(!AllLink.count(url)
+					&& e!=PLAYER)
 				{
 					//如果是COUNTRY类型的链接，需要加上年号字符,比如 /country/10/2014/Armenia.html
-					string url=m_iter->first;
+					
 					if(e==COUNTRY)
 					{						
 						_sDate Date;
@@ -129,22 +129,21 @@ int main(int argc, char* argv[])
 						url.insert(pos,"/"+strYear);
 					}
 					AllLink.insert(url);
-					LinkQ.push_back(url);	
-					onfile << url +"\n";
-					onfile.flush();
+					LinkQ.push_back(url);					
 				}/*end if*/
 				
-			}//for
+		/*	}//for
 			//处理COUNTRY型的网页，提取相关信息
 			if((UrlFlag(QueLink))==COUNTRY)
 			{
-				//CountryPage(pageSrc,sNTeam);
-				CountryPage(QueLink,sNTeam);
+				CountryPage(pageSrc,sNTeam);
+				
+				//存储下载的网页
 				filename = "./Country/"+QueLink.substr(QueLink.find_last_of('/')+1,QueLink.find_last_of('.')-QueLink.find_last_of('/')-1);
 				filename.append(".txt");
 				ofile.open(filename);
 				ofile<<pageSrc;
-				ofile.close();
+				ofile.flush();
 				filename.clear();
 			}
 			
@@ -154,13 +153,21 @@ int main(int argc, char* argv[])
 		
 	}//end while(LinQ.size()!=0)
 	
+	set<string>::iterator s_errorlink_iter;
+	for(s_errorlink_iter=ErrorLink.begin();s_errorlink_iter!=ErrorLink.end();++s_errorlink_iter)
+	{
+		errorUrl<<(*s_errorlink_iter);
+		errorUrl<<"\n";
+	}
+	errorUrl.close();
+	
+	//存储map中的所有链接
+	map<string,URL>::iterator m_iter;
+	for(m_iter=mPageLinks.begin();m_iter!=mPageLinks.end();m_iter++)
+	{
+		onfile << m_iter->first + "\n" ;
+	}//for
 	onfile.close();
-	//map<string,URL>::iterator m_iter;
-	//for(m_iter=mPageLinks.begin();m_iter!=mPageLinks.end();m_iter++)
-	//{
-	//	onfile << m_iter->first + "\n" ;
-	//}//for
-	//onfile.close();
 /*
 	if(!InitCnameFile())
 	{
@@ -178,6 +185,14 @@ int main(int argc, char* argv[])
 	/////////////////////////////////////////////////////////////////////////////
 	//national football team网页
 	//nFteamURL = www.national-football-teams.com/continent/3/Asia.html
+
+/////////////////////////Test///////////////////////////////////////////////////
+	//string pageSrc;
+	if(ReadFromFile("./Country/Armenia.txt",pageSrc))
+	{
+		CountryPage(pageSrc,sNTeam);
+	}
+	
 	return 0;
 }
 

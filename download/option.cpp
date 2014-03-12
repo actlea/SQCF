@@ -256,6 +256,7 @@ void ExtractCountryCoach()
 }
 
 //提取标签中的内容，返回标签结束的位置
+//<>value</>提取的就是中间的value的值
 string::size_type NextValue(const  string& source,string::size_type pos,const string& element_name,string& value,bool non_end_mark)
 {
 	string element="";
@@ -341,6 +342,12 @@ string::size_type NextElement(const  string&source,string::size_type pos,const s
     return pend;
 }
 
+//提取标签元素中某个属性的值，仍然分两种类型:<a..></a>或者是<img.../>的类型
+string::size_type NextAttribute(const string&source,const string& attribute_name,string &value,string::size_type pos,bool non_end_mark)
+{
+
+}
+
 bool nocase_compare(char c1,char c2)
 {
    return toupper(c1)==toupper(c2);
@@ -387,10 +394,61 @@ std::map<string,URL> GetHyperLinks(const string& source)
 void CountryPage(const string& source, _sNTeam& s_nteam)
 {
 	string pageSrc = source;
-//	string tabStr = ExtractDataToStr(pageSrc);
-	string file1 = "./Country/file1.txt";
-	ExtractTableDataFromUrl(source, file1);
+	string tabStr = ExtractDataToStr(pageSrc); //提取的未经处理的表格数据
+	string lineStr;
+	string::size_type pos = 0;
+	string::size_type one,two,three,four,five;
+	string tempSrc;
 
+	_sPlayer oPlayer;
+	//vector<_sPlayer>::iterator player_iter;
+	string ename;
+	string birthday;
+	string position;
+	string club;
+	//int col = 5;	//我们只需要前5列的数据，其中有一列是国旗，也要去掉
+
+	//处理表格数据，因为表格式按行划分的，因此我们可以按行读取
+	while((pos=ReadLine(tabStr,lineStr,pos))<tabStr.size())
+	{
+		//提取数据
+		one=locate(lineStr,",",1);
+		two=locate(lineStr,",",2);
+		three=locate(lineStr,",",3);
+		four=locate(lineStr,",",4);
+		five=locate(lineStr,",",5);
+		
+		ename=lineStr.substr(0,one);
+		ename=extract(ename);
+		//名字比较长
+		if(ename.find("/")!=string::npos)
+		{
+			ename.replace(ename.find("/"),1,',');
+		}
+
+		birthday=lineStr.substr(one,two-one);
+		birthday=extract(birthday);
+
+		position=lineStr.substr(two,three-two);
+		position=extract(position);
+
+		club=lineStr.substr(four,five-four);
+		club=extract(club);
+		//存入数据
+		oPlayer._eName=ename;
+		oPlayer._age=birthday;
+		oPlayer._position=position;
+		oPlayer._clubName=club;
+
+		(s_nteam._players).push_back(oPlayer);
+		//用于测试
+		tempSrc += ename+ birthday+ position +club+"\n";
+	}
+	string file1 = "./Country/file1.txt";
+	ofstream tablefile;
+	tablefile.open(file1);
+	tablefile<<tempSrc;
+	tablefile.close();
 }
 
 
@@ -411,4 +469,244 @@ void GetDate(_sDate& Date)
 	Date._year = tblock->tm_year+1900;
 	Date._month = tblock->tm_mon+1;
 	Date._day = tblock->tm_mday;
+}
+
+//按行读取字符串,返回行结束符的位置
+string::size_type ReadLine(const string& tableStr,string&lineStr,string::size_type pos)
+{
+	string::size_type pbegin = tableStr.find('\n',pos+1);
+	lineStr.clear();
+	if(pbegin==string::npos)
+	{
+		return tableStr.size();
+	}
+	lineStr = tableStr.substr(pos,pbegin);
+	return pbegin;
+}
+
+string::size_type locate(string &line,const string& tag,int index)
+{
+	string::size_type pos = 0;
+	string::size_type tagPos=pos;
+	int i=1;
+	while(i<=index)
+	{
+		tagPos=line.find(tag,pos);
+		if(tagPos!=string::npos)
+			i++;
+		pos = tagPos+1;
+	}
+	if(i<=index)
+		return line.size();
+	else
+		return tagPos;
+}
+
+string::size_type locate(string &line,const string&tag)
+{
+	return locate(line,tag,1);
+}
+
+//考虑的只有两种情形
+//<a><></></a>和...></>
+//不需要配套地找<>和</>，而只需要知道最靠近数据的></>就可以了
+string extract(string&line)
+{
+	string::size_type pre=0,start=0;
+	eraseTag(line,',');
+	if(line.find("<")==string::npos)
+		return line;
+	while((start=line.find("<",start))!=string::npos)
+	{
+		if(line[start+1]=='/')
+		{
+			start++;
+			continue;
+		}
+		else
+		{
+			pre=start;
+			start++;
+		}
+	}
+	//此时pre指向最靠近数据的一个标签
+	//if(line[pre]!='<')//说明标签不是完全匹配的，有缺损，比如..></>
+		//start=pre;
+	//else
+		start=line.find(">",pre);
+
+	string::size_type end=line.find("</",start+1);
+	if(end==string::npos)
+		end=line.size();
+	return line.substr(start+1,end-start-1);
+}
+
+//去除单个的tag标签
+void eraseTag(string &source,char tag)
+{
+	string::iterator it_str;
+	for(it_str=source.begin();it_str!=source.end();it_str++)
+	{
+		if((*it_str)==tag)
+			source.erase(it_str);
+	}
+}
+
+//****************************提取表格数据******************
+
+//从下载好的网页中提取表格存入string中
+std::string ExtractDataToStr(string& str)
+{
+	std::string originalPageString = str;
+	std::string tabStr;
+	std::string tempStr;
+	std::string sResult;
+	
+	while (FindTableInHtmlString(originalPageString, tempStr) == 0)
+	{	
+
+		tabStr += tempStr;
+		//从表格中提取数据
+		sResult+=ExtractTableDataEx2(tabStr);
+				
+	}/*end while*/
+	return sResult;
+}
+
+//该函数去除了原始table中所有的换行符，然后最后按行提取的时候又加上了换行符，
+//这样我们就可以按行读取字符串了
+std::string ExtractTableDataEx2(string& table)
+{
+	string strResult;
+	//去除表格中的空格
+	DeleteSpaces(table);
+	eraseTag(table,'\n');//去除原始table中所有的换行符
+
+	//去掉表头<thead
+	if(table.find("tbody")!=string::npos)
+		table = table.substr(table.find("<tbody"),table.find("</tbody")-table.find("<tbody"));
+	//统计表格行数
+	int rowNum = SubStrCount(table, "<tr");
+
+
+	//以表格各行的最大列数作为表格的列数
+	int colNum = 0;
+	size_t rpos = 0;
+	string rowStr;
+	for (int i = 0; i < rowNum; i++)
+	{
+		rpos = FindStr2Str(table, rpos, "<tr", "</tr>", rowStr);
+		int n = SubStrCount(rowStr, "<td");
+		if (n > colNum)
+			colNum = n;
+	}
+
+	
+	//初始化包含所有表格数据的二维vector
+	vector< vector<string> > tabVec(rowNum);
+	vector< vector<string> >::iterator rIter = tabVec.begin();
+	for (; rIter != tabVec.end(); ++rIter)
+	{
+		(*rIter).resize(colNum);
+	}
+
+	//按行遍历表格
+	rpos = 0;
+	for (int i = 0; i < rowNum; i++)
+	{
+		rpos = FindStr2Str(table, rpos, "<tr", "</tr>", rowStr);
+		//计算这一行的列数
+		int crrntColNum = SubStrCount(rowStr, "<td") + SubStrCount(rowStr, "<th");
+		
+		//对每一个td进行处理
+		string tdStr, dataStr, tmpStr;
+		int cpos = 0;
+		for (int j = 0; j < crrntColNum; j++)
+		{
+			if (rowStr.find("<th") != string::npos)
+				cpos = FindStr2Str(rowStr, cpos, "<th", "</th>", tdStr);
+			else
+				cpos = FindStr2Str(rowStr, cpos, "<td", "</td>", tdStr);
+			
+			//确定该单元格横跨的行数
+			int spanNum;
+			if (tdStr.find("rowspan") != string::npos)
+			{
+				string spanNumStr;
+				FindStr2StrEx(tdStr, 0, "rowspan=\"", "\"", spanNumStr);
+				spanNum = atoi(spanNumStr.c_str());
+			}
+			else
+				spanNum = 1;
+			//为了防止网页本身rowspan错误导致tabVec数组越界，将spanNum修改为正确值
+			//该情况出现在http://sports.sina.com.cn/z/wvbach11/schedule/index.shtml 第9比赛日9.23(周五)这个字段上面
+			if (i + spanNum - 1 > rowNum - 1)
+				spanNum = rowNum - i;
+			//提取单元格的数据
+			ExtractDataFromTd(tdStr, dataStr);
+
+			
+			//在第i行的vector中找到第一个为空的位置
+			int emptyPos = 0;
+			while (tabVec[i][emptyPos] != "")
+				emptyPos++;
+			//对spanNum行写入单元格数据dataStr
+			for (int k = i; k - i < spanNum; k++)
+			{
+				
+				tabVec[k][emptyPos] = dataStr;
+			}
+		}
+	}
+	//将二维vector写入string
+	rIter = tabVec.begin();
+	for (; rIter != tabVec.end(); ++rIter)
+	{
+		vector<string>::iterator cIter = (*rIter).begin();
+		for (; cIter <= (*rIter).end() - 1; ++cIter)
+		{
+			//不是最后一项，且下一项不为空
+			if (cIter != (*rIter).end() - 1 && *cIter != "" && *(cIter+1) != "")
+				strResult += (*cIter) + ',';
+			else
+			{
+				strResult += (*cIter);
+				break;
+			}
+		}
+		strResult += '\n';
+	}
+	return strResult;
+}
+
+//从本地文件中读取数据存入pageSrc，如果成功返回true
+bool ReadFromFile(string filePath,string& pageSrc)
+{
+	string tmpStr;
+	ifstream in;
+
+	in.open(filePath);
+	if(!in)
+		return false;
+
+	
+	while(getline(in,tmpStr))
+	{
+		pageSrc+=tmpStr;
+		tmpStr.clear();
+	}
+	in.close();
+	return true;
+}
+
+bool WriteToFile(string filePath,string& pageSrc)
+{
+	string tmpStr;
+	ofstream out;
+
+	out.open(filePath);
+	if(!out)
+		return false;
+	out<<pageSrc;
+		return true;
 }

@@ -11,5 +11,8 @@
 Name
 D. o. B.
 Position
-Current club
-
+club
+M
+S
+G
+Fifa

@@ -57,15 +57,19 @@ string::size_type NextValue(const  string& source,string::size_type pos,const st
 	Calls:          // 被本函数调用的函数清单
 	Table Accessed: // 被访问的表（此项仅对于牵扯到数据库操作的程序）
 	Table Updated: // 被修改的表（此项仅对于牵扯到数据库操作的程序）
-	Input:          1non_end_mark表示要寻找的元素是否没有结束标记，比如<img.....>
+	Input:          1non_end_mark表示要寻找的元素是否没有结束标记，比如<img.....>,如果bool non_end_mark=true
+					那么就是类似<a..>...</a>这样的标签
 	Output:         // 对输出参数的说明。
 	Return:         //如果没有找到元素，则返回source.size()
 					//找到则返回这一元素的下一位置
 					//因此如果返回值为source.size(),则并不能确定元素是否存在，可以
 					//检查element是否为空来判断元素是否存在
-
+	Other:
 	*********************************************************************************/
 string::size_type NextElement(const  string&source,string::size_type pos,const string&element_name,string&element,bool non_end_mark=false);
+
+//提取标签元素中某个属性的值，仍然分两种类型:<a..></a>或者是<img.../>的类型
+string::size_type NextAttribute(const string&source,const string& attribute_name,string &value,string::size_type pos,bool non_end_mark=false);
 
 bool nocase_compare(char c1,char c2);
 
@@ -95,3 +99,25 @@ void PlayerPage(const string& source,_sPlayer& s_player);
 
 //获取date
 void GetDate(_sDate& Date);
+
+//按行读取字符串,返回行结束符的位置
+// prama:tableStr为原始的数据文件
+//		lineStr为按行从tableStr中读取的字符串
+//other：如果按行读取没有换行符了，就返回tableStr.size();
+string::size_type ReadLine(const string& tableStr,string& lineStr,string::size_type pos=0);
+
+string::size_type locate(string &line,const string& tag,int index);//定位到第index个tag处,当前行保存在line中。找到则返回true
+string::size_type locate(string &line,const string&tag);
+
+string extract(string&line);//提取line中的数据
+
+void eraseTag(string &source,char tag);//删除source中的所有tag标签
+
+//提取表格数据
+//从下载好的网页中提取表格存入string中
+std::string ExtractDataToStr(string& str);
+std::string ExtractTableDataEx2(string& str);
+
+//从本地文件中读取数据存入pageSrc，如果成功返回true
+bool ReadFromFile(string filePath,string& pageSrc);
+bool WriteToFile(string filePath,string& pageSrc);
