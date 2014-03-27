@@ -155,6 +155,32 @@ string DownLoadPage(string LinkURL)
 	return PageSrc;
 }
 
+//下载图片
+bool downloadImage(const string&URL,const string& filename)
+{
+	::CoInitialize(NULL);
+	int i=0;
+	int retry_attempt=3;
+	while(i<retry_attempt&&URLDownloadToFile(NULL,URL.c_str(),filename.c_str(),0,NULL)!=S_OK)
+	{
+		cout<<"下载图片失败"<<endl;
+		cout<<"图片URL: "<<URL<<endl;
+		cout<<"重新下载"<<endl;
+		i++;
+	}
+	if(i<retry_attempt)
+	{
+		cout<<"下载图片成功"<<endl;
+		return true;
+	}
+	else
+	{
+		cout<<"此图不存在"<<endl;
+		return false;
+	}
+	return true;
+}
+
 //将url中的主机和路劲字段分开
 struct ParseURL SplitURL(string URL)
 {

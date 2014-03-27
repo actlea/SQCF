@@ -194,6 +194,7 @@ bool InitCnameFile()
 	}
 	FileToSet.close();
 
+	/*
 	//把nf_country_zh_en_name文件中的数据加入到分词工具ICTCLAS中
 	if(!ICTCLAS_Init("E:\\ZJM\\vsProject\\download\\download"))
 	{
@@ -206,6 +207,7 @@ bool InitCnameFile()
 	ICTCLAS_FileProcess(nf_country_zh_en_name.c_str(), "Test_result.txt",CODE_TYPE_GB, 1);
 	ICTCLAS_SaveTheUsrDic();//保存添加的词汇，下次使用依然有效
 	ICTCLAS_Exit();//释放资源退出
+	*/
 	return true;
 }
 
@@ -292,7 +294,7 @@ string::size_type NextValue(const  string& source,string::size_type pos,const st
 
 //提取source遇到的第一个element_name的标签
 //返回的element如果不为空，就应该是<element_name...>value</element_name>
-
+//该函数以前没有考虑<img.../>的情况
 string::size_type NextElement(const  string&source,string::size_type pos,const string&element_name,string&element,bool non_end_mark)
 {
 	element="";
@@ -303,9 +305,10 @@ string::size_type NextElement(const  string&source,string::size_type pos,const s
 	while(pbegin<source.size()){
 		pbegin=search(pbegin+source.begin(),source.end(),match_name.begin(),match_name.end(),nocase_compare)-source.begin();
 		if(pbegin>source.size()) return source.size();
+		//pend只想element_name的末尾
 		pend=pbegin+element_name.size()+1;
 		if(pend>source.size()) return source.size();
-		if(source[pend]=='/'){
+		if(source[pend]=='/'){ //判断是否为</element_name
 			pend+=1;
 			if(pend>source.size()) return source.size();
 			if(source[pend]=='>'){
@@ -330,9 +333,10 @@ string::size_type NextElement(const  string&source,string::size_type pos,const s
 		element=source.substr(pbegin,pend-pbegin+1);
 		return pend+1;
 	}
-    match_name="</"+element_name+">";
-    pend=search(pend+source.begin(),source.end(),match_name.begin(),match_name.end(),nocase_compare)-source.begin();
-    if(pend==source.size())
+	match_name="</"+element_name+">"; 
+	pend=search(pend+source.begin(),source.end(),match_name.begin(),match_name.end(),nocase_compare)-source.begin();
+
+	if(pend==source.size())
         return source.size();
     else
     {
@@ -342,11 +346,6 @@ string::size_type NextElement(const  string&source,string::size_type pos,const s
     return pend;
 }
 
-//提取标签元素中某个属性的值，仍然分两种类型:<a..></a>或者是<img.../>的类型
-string::size_type NextAttribute(const string&source,const string& attribute_name,string &value,string::size_type pos,bool non_end_mark)
-{
-
-}
 
 bool nocase_compare(char c1,char c2)
 {
@@ -391,7 +390,7 @@ std::map<string,URL> GetHyperLinks(const string& source)
 	return linkMap;
 }
 
-void CountryPage(const string& source, _sNTeam& s_nteam)
+void CountryPage(const string& source, _sNTeam& s_nteam, const string&name)
 {
 	string pageSrc = source;
 	string tabStr = ExtractDataToStr(pageSrc); //提取的未经处理的表格数据
@@ -401,17 +400,24 @@ void CountryPage(const string& source, _sNTeam& s_nteam)
 	string tempSrc;
 
 	_sPlayer oPlayer;
+	_Coach oCoach;
+
 	//vector<_sPlayer>::iterator player_iter;
 	string ename;
 	string birthday;
 	string position;
 	string club;
-	//int col = 5;	//我们只需要前5列的数据，其中有一列是国旗，也要去掉
+
+	string file1 = "./Country/file1.txt";
+	ofstream tablefile;
+	tablefile.open(file1);
+	
 
 	//处理表格数据，因为表格式按行划分的，因此我们可以按行读取
 	while((pos=ReadLine(tabStr,lineStr,pos))<tabStr.size())
 	{
-		//提取数据
+
+#pragma region 提取player信息
 		one=locate(lineStr,",",1);
 		two=locate(lineStr,",",2);
 		three=locate(lineStr,",",3);
@@ -420,10 +426,10 @@ void CountryPage(const string& source, _sNTeam& s_nteam)
 		
 		ename=lineStr.substr(0,one);
 		ename=extract(ename);
-		//名字比较长
-		if(ename.find("/")!=string::npos)
+		//名字比较长，名字间的/替换为,
+		if(ename.find('/')!=string::npos)
 		{
-			ename.replace(ename.find("/"),1,',');
+			ename.replace(ename.find('/'),1,",");
 		}
 
 		birthday=lineStr.substr(one,two-one);
@@ -439,18 +445,37 @@ void CountryPage(const string& source, _sNTeam& s_nteam)
 		oPlayer._age=birthday;
 		oPlayer._position=position;
 		oPlayer._clubName=club;
-
 		(s_nteam._players).push_back(oPlayer);
+#pragma endregion
 		//用于测试
 		tempSrc += ename+ birthday+ position +club+"\n";
-	}
-	string file1 = "./Country/file1.txt";
-	ofstream tablefile;
-	tablefile.open(file1);
-	tablefile<<tempSrc;
-	tablefile.close();
-}
+		tablefile<<tempSrc;
+		
+	}// end while
 
+	
+#pragma region 提取coach数据和country数据
+
+		s_nteam._eCNAME = name; //国家英文名
+		if(extractImageUrl(pageSrc,"/flag",s_nteam._FlagLink))
+		{
+			cout << name << " flag got!" << endl;
+		}
+		else
+			cout << name << " flag not found!" << endl;
+		tablefile << s_nteam._FlagLink +"\n";
+		//coach info
+		getCoach(pageSrc,oCoach);
+		
+#pragma endregion
+
+		tablefile.close();
+	
+}
+void CountryPage(const string& source, _sNTeam& s_nteam)
+{
+	CountryPage(source,s_nteam,"");
+}
 
 
 //提取球员信息
@@ -709,4 +734,136 @@ bool WriteToFile(string filePath,string& pageSrc)
 		return false;
 	out<<pageSrc;
 		return true;
+}
+//从url中提取出country或者是player的姓名
+bool GetUrlName(const string& url,string&name,bool non_end_mark)
+{
+	string QueLink = url;
+	if(QueLink.find("player")==string::npos
+		&&QueLink.find("country")==string::npos)
+		return false;
+	eraseTag(QueLink,' ');//删除所有的空格
+	//不包括诸如.html,.jpg之类的后缀名
+	if(!non_end_mark)
+		name=QueLink.substr(url.find_last_of('/')+1,QueLink.find_last_of('.')-QueLink.find_last_of('/')-1); 
+	else
+		name=QueLink.substr(url.find_last_of('/')+1,QueLink.size()-url.find_last_of('/'));
+	return true;
+}
+
+bool extractImageUrl(const string&pageSrc, const string& tag_mark, string &imageUrl)
+{
+	
+	
+	string::size_type pos = 0,len = pageSrc.length();
+	
+	string tmpSrc;
+	string imgStr=""; //包含img的字段<img.../>
+	while((pos=NextElement(pageSrc,pos,"img",tmpSrc,true))<len)
+	{
+		if(tmpSrc.find(tag_mark)!=string::npos)
+		{
+			imgStr = GetTag(tmpSrc,"src=\"","\"",1);
+			eraseTag(imgStr,' '); //剔除地址中的空格
+			break;
+		}
+	}
+	if(pos>=len)  return false;
+	imageUrl = imgStr;
+	return true;
+
+}
+
+bool getCoach(const string&pageSrc, _Coach& oCoach)
+{
+	string html = pageSrc;
+	string coachDiv;
+	HTML::ParserDom parser;
+	tree<HTML::Node> dom = parser.parseTree(html);
+	
+	//cout << dom << endl;
+	//dump all div
+	tree<HTML::Node>::iterator it = dom.begin();
+	tree<HTML::Node>::iterator end = dom.end();
+	tree<HTML::Node>::iterator it_child = dom.begin();
+	tree<HTML::Node>::iterator end_child = dom.end();
+	
+	//dom.child()
+	for (; it != end; ++it)
+		{
+			if (strcmp(it->tagName().c_str(), "div") == 0)
+			{
+				it->parseAttributes();
+				
+				//cout << it->closingText() << endl;//返回的是标签的结束标志</div>
+				//cout << it->attribute("href").second << endl; //返回的事href属性的值
+				//提取coach模块
+				if(strcmp(it->attribute("class").second.c_str(),"text-widget player-info")==0)
+				{
+					string str;
+
+					/*int numofChild = dom.number_of_children(it);
+					it_child = it.node->first_child;
+					end_child = it.node->last_child;
+					cout << "first child of " << it->text() << " is " << it_child->tagName() << endl;
+					cout << "last child of " << it->text() << " is " << end_child->tagName() << endl;
+					int i = 0;
+					for(;it_child!=end_child;++it_child,++i)
+					{
+						str += it_child->text();
+						if(!it_child->isTag())
+						{
+							cout << i << " : " <<it_child->text() << endl;
+						}
+					}
+					cout << str << endl;*/
+					//it_child = dom.next_sibling(it);
+					//cout << it_child->text() <<' ' << it_child->tagName() << endl;
+					//it_child = dom.previous_sibling(it);
+					//cout << it_child->text() <<' ' << it_child->tagName() << endl;
+					//it_child = dom.child(it,1);
+					//cout << it_child->text() <<' ' << it_child->tagName() << endl;
+					////dom.next_sibling()
+					//cout << it->attribute("class").second << endl;
+					//it->closingText(coachDiv);
+					//cout << "closingText()= " << coachDiv << endl;
+					//cout <<" it->text()=" << it->text() << endl;
+					//cout << "it->tagName()=" << it->tagName() << endl;
+					//it->closingText(coachDiv);
+			//		walk_tree(dom);
+					walk_tree(it,str);
+					cout << str << endl;
+				}
+			}
+		}
+
+	string::size_type pos = 0;
+	string element = "";
+	string tag_mark = "player-info"; //包含coach标签的关键字段
+
+	pos=pageSrc.find(tag_mark);
+	string div_element = element;
+	return true;
+}
+
+void walk_tree( tree<HTML::Node> const & dom )
+{
+	tree<HTML::Node>::iterator it = dom.begin();
+	cout<<it->text();
+	for ( unsigned i=0; i<dom.number_of_children(it); i++ )
+	{
+		walk_tree( dom.child(it,i) );
+	}
+	cout<<it->closingText();
+}
+
+void walk_tree( tree<HTML::Node>::iterator it,string & str )
+{
+	tree<HTML::Node>::iterator iter = it.node->first_child;
+	str += iter->text();
+	for ( unsigned i=0; i<iter.number_of_children(); i++ )
+	{
+		walk_tree(iter,str);
+	}
+	str += iter->closingText();
 }

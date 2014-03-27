@@ -34,6 +34,7 @@ bool JudgeCode(string s); //判断网页的格式
 
 void TransferCode(string &s);
 
+bool downloadImage(const string&imageUrl,const string& filePath);//下载图片
 
 #pragma endregion
 

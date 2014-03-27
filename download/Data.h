@@ -4,6 +4,11 @@
 #include <string>
 using std::string;
 
+typedef struct _Player _sPlayer;
+typedef struct _NTeam _sNTeam;
+typedef struct _Date _sDate;
+typedef struct _Coach _sCoach;
+
 typedef struct _Player
 {
 	string _cName;//中文名
@@ -22,9 +27,9 @@ typedef struct _NTeam
 {
 	string _cCName;//国家中文名
 	string _eCNAME;//国家英文名
-	string _Coach;//教练
+	
 	string _FlagLink;//国旗
-
+	struct _Coach *pCoach;//教练
 	string _info;//简介
 	string _credit;//荣誉
 	string _teamImage;//球队照片
@@ -37,3 +42,13 @@ typedef struct _Date
 	int _day;
 	int _month;
 }_sDate;
+
+typedef struct _Coach
+{
+	string _cname;
+	string _ename;
+	string _imageurl;
+	string _birthdate;
+	string _birthPlace;
+	string _height;
+}_sCoach;

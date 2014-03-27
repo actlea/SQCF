@@ -11,7 +11,7 @@
 #include <sstream>
 #include <algorithm>
 
-//返回source中bTag和eTag之间的字符，包含其实和结束标签
+//返回source中bTag和eTag之间的字符，根据flag的不同，决定是否包含起始和结束标签
 string GetTag(const string& source, const string& bTag, const string& eTag,int flag=0);
 //判断链接是否是我们需要的链接
 bool JudgeFootballInfo(const string&); 
@@ -68,8 +68,6 @@ string::size_type NextValue(const  string& source,string::size_type pos,const st
 	*********************************************************************************/
 string::size_type NextElement(const  string&source,string::size_type pos,const string&element_name,string&element,bool non_end_mark=false);
 
-//提取标签元素中某个属性的值，仍然分两种类型:<a..></a>或者是<img.../>的类型
-string::size_type NextAttribute(const string&source,const string& attribute_name,string &value,string::size_type pos,bool non_end_mark=false);
 
 bool nocase_compare(char c1,char c2);
 
@@ -89,11 +87,10 @@ std::map<string,URL> GetHyperLinks(const string& source);
 *Function:get info of national country team
 *input:source is page string
 		s_nteam is a struct to store the useful info
-		if the function succeffully finish,flag is assign to true
 *
 */
+void CountryPage(const string& source, _sNTeam& s_nteam, const string&urlname);
 void CountryPage(const string& source, _sNTeam& s_nteam);
-
 //提取球员信息
 void PlayerPage(const string& source,_sPlayer& s_player);
 
@@ -121,3 +118,22 @@ std::string ExtractTableDataEx2(string& str);
 //从本地文件中读取数据存入pageSrc，如果成功返回true
 bool ReadFromFile(string filePath,string& pageSrc);
 bool WriteToFile(string filePath,string& pageSrc);
+
+//从url中提取出country或者是player的姓名
+//non_end_mark为真时，要保留后缀名，non_end_mark为假时，要去掉后缀名
+bool GetUrlName(const string& url,string&name,bool non_end_mark=false);
+
+
+/** \brief 该程序主要是图区网页中的图片的链接地址
+ *
+ * \param pageSrc 网页源码 
+ * \param tag_mark 标签，用于从提取的图片地址中筛选,比如图片地址中的"flag"字段,"country_images"字段
+ * \param imageUrl url of image
+ * \return 如果找到则返回true，否则返回false
+ * \other 给定的标签应该是排他的，比如我们提取国旗地址时，miniflag，和flag都含有flag，但是/flag确实独有的，
+ * \所以应该以\flag为标签
+ */  
+bool extractImageUrl(const string&pageSrc, const string& tag_mark, string &imageUrl);
+bool getCoach(const string&pageSrc, _Coach& oCoach); //提取教练信息
+void walk_tree( tree<HTML::Node> const & dom );
+void walk_tree( tree<HTML::Node>::iterator it,string & str );

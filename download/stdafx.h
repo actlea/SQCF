@@ -25,12 +25,16 @@
 #include "Data.h"
 #include <time.h>
 
-#include"ICTCLAS50.h"
+//#include"ICTCLAS50.h"
 #include "unity.h"
 #include "StringPlus.h"
+#include "htmlcxx/html/ParserDom.h"
 
 #pragma comment(lib,"ws2_32.lib")
 #pragma comment(lib,"ICTCLAS50")
+#pragma comment(lib,"htmlcxx")
 using std::string;
 using std::vector;
 
+
+using namespace htmlcxx;

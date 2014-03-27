@@ -4,6 +4,7 @@
 #include "unity.h"
 #include "option.h"
 #include "Data.h"
+
 //#include <iomanip>
 
 //****************************main*******************************************************
@@ -20,7 +21,7 @@ int main(int argc, char* argv[])
 	string QueLink; //用于存放即将处理的链接，该链接是从队列中取出来的
 	//string::size_type i = 0, j=0;
 	//string::size_type SrcLen = 0;	//源文件的长度
-	//string::size_type  Location=0;
+	//string::size_tsype  Location=0;
 	//string::size_type  Temp=0;
 	//string::size_type  Linkend=0;
 	//string nationalTeam = NFTPAGE;
@@ -188,10 +189,48 @@ int main(int argc, char* argv[])
 
 /////////////////////////Test///////////////////////////////////////////////////
 	//string pageSrc;
+	string url1 = "http://www.national-football-teams.com/country/5/2014/Andorra.html";
+	string url2 = "http://www.national-football-teams.com/player/362/Roman_Berezovsky.html";
+	string name1,name2;
+	GetUrlName(url1,name1,false);
+	GetUrlName(url2,name2,true);
 	if(ReadFromFile("./Country/Armenia.txt",pageSrc))
 	{
 		CountryPage(pageSrc,sNTeam);
 	}
+
+
+//Parse some html code
+//string html = "<html><body>hey</body></html>";
+//HTML::ParserDom parser;
+//tree<HTML::Node> dom = parser.parseTree(html);
+//
+////Print whole DOM tree
+//cout << dom << endl;
+//
+////Dump all links in the tree
+//tree<HTML::Node>::iterator it = dom.begin();
+//tree<HTML::Node>::iterator end = dom.end();
+//for (; it != end; ++it)
+//{
+//	if (strcmp(it->tagName().c_str(), "A") == 0)
+//	{
+//		it->parseAttributes();
+//		cout << it->attribute("href").second << endl;
+//	}
+//}
+//
+////Dump all text of the document
+//it = dom.begin();
+//end = dom.end();
+//for (; it != end; ++it)
+//{
+//	if ((!it->isTag()) && (!it->isComment()))
+//	{
+//		cout << it->text();
+//	}
+//}
+//cout << endl;
 	
 	return 0;
 }
