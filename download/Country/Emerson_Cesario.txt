@@ -1,0 +1,918 @@
+HTTP/1.1 200 OK
+Server: Apache/2.2.22 (Debian)
+Cache-Control: max-age=3600, public, s-maxage=3600
+Set-Cookie: PHPSESSID=f7f13chd7t5q8ufp1sbga38t72; path=/
+Vary: Accept-Encoding
+Content-Type: text/html; charset=UTF-8
+Date: Fri, 28 Mar 2014 06:18:01 GMT
+X-Varnish: 775983697
+Age: 0
+Via: 1.1 varnish
+Connection: close
+X-Cache: MISS
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>	Emerson Cesário
+ | National Football Teams</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="/bundles/nftbootstrapfrontend/img/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/bundles/nftbootstrapfrontend/img/favicon.ico" type="image/x-icon" />
+		<link rel="canonical" href="http://www.national-football-teams.com/player/48967/Emerson_Cesario.html" />
+		<meta name="description" content="Football statistics of Emerson Cesário including club and national team history.">
+	<meta name="keywords" content="football, national-team, soccer,Emerson, Cesário, 1990-02-16">
+	<meta name="author" content="Benjamin Strack-Zimmermann">
+	
+	<meta name="DC.title" content="	Emerson Cesário
+" />
+		<meta name="DC.identifier" content="http://www.national-football-teams.com/player/48967/Emerson_Cesario.html" />
+		<meta name="DC.description" content="Football statistics of Emerson Cesário including club and national team history." />
+	<meta name="DC.subject" content="football, national-team, soccer, Emerson, Cesário, 1990-02-16" />
+	<meta name="DC.language" scheme="ISO639-1" content="en" />
+	<meta name="DC.creator" content="Benjamin Strack-Zimmermann" />
+
+							<link rel="stylesheet" href="/css/f2ea46f.css"  />
+				<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,900,400italic' rel='stylesheet' type='text/css'>
+	
+<script type="text/javascript" src="/js/4fa6d38.js"></script>
+  
+
+			<script type="text/javascript">
+			  jQuery(document).ready(function($){
+				if($('#socialshareprivacy').length > 0){
+				  $('#socialshareprivacy').socialSharePrivacy({
+				  	'css_path': '',
+				  	'info_link' : '#',
+					'txt_help' : 'When you activate these fields by clicking, information to Facebook, Twitter and Google will be transferred to them and according to their individual policies may also be stored there indefinitely. This does not happen until you click to activate each one.',
+					'settings_perma' : 'Permanently enable activation and data transmission',
+				  	services : {
+						facebook : {
+							'dummy_img'	: '/bundles/nftbootstrapfrontend/img/socialshareprivacy/dummy_facebook_en.png',
+							'txt_info' : '2 clicks for more privacy: Only when you click here will the social site know you visisted this page',
+							'txt_fb_off' : 'not connected with Facebook',
+							'txt_fb_on' : 'connected with Facebook',
+							'perma_option' : 'on',
+							'display_name' : 'Facebook',
+							'language' : 'en_US',
+							'action' : 'recommend'
+						},
+						gplus : {
+							'dummy_img': '/bundles/nftbootstrapfrontend/img/socialshareprivacy/dummy_gplus.png',
+							'txt_info' : '2 clicks for more privacy: Only when you click here will the social site know you visisted this page.',
+							'txt_gplus_off' : 'not connected with Google+',
+							'txt_gplus_on' : 'connected with Google+',
+							'perma_option' : 'on',
+							'display_name' : 'Google+',
+							'language' : 'en'
+						},
+						twitter: {
+							'dummy_img': '/bundles/nftbootstrapfrontend/img/socialshareprivacy/dummy_twitter.png',
+							'txt_info' : '2 clicks for more privacy: Only when you click here will the social site know you visisted this page',
+							'txt_twitter_off' : 'not connected with Twitter',
+							'txt_twitter_on' : 'connected with twitter',
+							'perma_option' : 'on',
+							'display_name' : 'Twitter',
+							'language' : 'en'
+						},
+						
+					}, 
+				  }); 
+				}
+			  });
+		</script>
+	</head>
+<body>
+<div class="header-block clearfix">
+	<!-- Navigation -->
+	<header>
+		<div id="logo">
+			<a href="/"><img src="/bundles/nftbootstrapfrontend/img/base/header.gif" alt="NFT Logo" /></a>
+		</div>
+		<div id="activity"></div>
+		<div class="container">
+			<div class="row">
+				<div class="span12 clearfix">
+					<div class="navbar navbar_ clearfix">
+						<div class="navbar-inner">
+							<div class="container">
+									<select id="responsive-main-nav-menu" onchange="javascript:window.location.replace(this.value);"></select>
+<div id="main-nav-menu" class="nav-collapse nav-collapse_ collapse">
+            	
+        <ul     class="nav sf-menu">
+                                                    <li     class="sub-menu first">            <a href="/national.html"     title="Info and statistics about all National Football (Soccer) Teams"><span>Teams <em> national teams</em></span></a><em></em>                    	
+        <ul     class="menu_level_1">
+                                                    <li     class="first">            <a href="/continent/1/Europe.html"    ><span>Europe</span></a><em></em>                    
+    </li>
+
+                    <li    >            <a href="/continent/2/Africa.html"    ><span>Africa</span></a>                    
+    </li>
+
+                    <li    >            <a href="/continent/3/Asia.html"    ><span>Asia</span></a>                    
+    </li>
+
+                    <li    >            <a href="/continent/4/Oceania.html"    ><span>Oceania</span></a>                    
+    </li>
+
+                    <li    >            <a href="/continent/5/South_America.html"    ><span>South America</span></a>                    
+    </li>
+
+                    <li     class="last">            <a href="/continent/6/North_America.html"    ><span>North America</span></a>                    
+    </li>
+
+                
+        </ul>
+    
+    </li>
+
+                    <li     class="sub-menu">            <a href="/matches.html"    ><span>Matches <em> cups &amp; friendlies</em></span></a>                    	
+        <ul     class="menu_level_1">
+                                                    <li     class="first">            <a href="/matches/tournament/2/2013/0/African_Nations_Cup.html"    ><span>African Nations Cup</span></a><em></em>                    
+    </li>
+
+                    <li    >            <a href="/matches/tournament/3/2015/0/Asian_Cup.html"    ><span>Asian Cup</span></a>                    
+    </li>
+
+                    <li    >            <a href="/matches/tournament/4/2011/0/Copa_America.html"    ><span>Copa America</span></a>                    
+    </li>
+
+                    <li    >            <a href="/matches/tournament/5/2012/0/European_Championship.html"    ><span>European Championship</span></a>                    
+    </li>
+
+                    <li    >            <a href="/matches/tournament/6/2013/0/Gold_Cup.html"    ><span>Gold Cup</span></a>                    
+    </li>
+
+                    <li    >            <a href="/matches/tournament/7/2004/0/Oceania_Cup.html"    ><span>Oceania Cup</span></a>                    
+    </li>
+
+                    <li    >            <a href="/matches/tournament/1/2014/0/World_Cup.html"    ><span>World Cup</span></a>                    
+    </li>
+
+                    <li    >            <a href="/matches/other_tournaments.html"    ><span>Other tournaments</span></a>                    
+    </li>
+
+                    <li     class="last">            <a href="/matches/-/-/friendlies.html"    ><span>Friendlies</span></a>                    
+    </li>
+
+                
+        </ul>
+    
+    </li>
+
+                    <li    >            <a href="/clubs.html"    ><span>Clubs <em> list of clubs</em></span></a>                        	<em></em>
+    
+    </li>
+
+                    <li    >            <a href="/statistics.html"     class="mainmenu"><span>Statistics <em> matches, goals, ...</em></span></a>                        	<em></em>
+    
+    </li>
+
+                    <li    >            <a href="/contact.html"     class="mainmenu"><span>Contact<em> stay in touch</em></span></a>                        	<em></em>
+    
+    </li>
+
+                    <li     class="last">            <a href="http://www.national-teams.com/forum/index.php?c=1"     class="mainmenu"><span>Forum<em> discuss!</em></span></a>                        	<em></em>
+    
+    </li>
+
+                
+        </ul>
+    
+</div>							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- breadcrumb -->
+	<div class="container">
+		<div class="row">
+			<div class="span6">
+				<div id="page-title">
+					<ul class="breadcrumb">
+							<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+		<a href="/" itemprop="url">
+			<span itemprop="title">Home</span>
+		</a>
+		<span class="divider">/</span>
+	</li>
+	<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+		<a href="/national.html" itemprop="url">
+			<span itemprop="title">Teams</span>
+		</a>
+		<span class="divider">/</span>
+	</li>
+					
+	<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+		<a href="/country/229/0/East_Timor.html" itemprop="url">
+			<span itemprop="title">East Timor</span>
+		</a>
+		<span class="divider">/</span>
+	</li>
+		<li class="active" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+		<a href="/player/48967/Emerson_Cesario.html" itemprop="url">
+			<span itemprop="title">Emerson Cesário</span>
+		</a>
+	</li>
+					</ul>
+				</div>
+			</div>
+			<div class="span6 search-container">
+												 
+				<form method="get" action="/search.html?primarySearchType=0&amp;ajax=false" class="navbar-search pull-right">
+					<div class="input-append">
+						<input type="text" class="span3 left" id="searchMain" name="term" placeholder="Search">
+						<button type="submit" class="btn" title="Search"><i class="icon-search"></i></button>
+					</div>
+				</form>
+				<script type="text/javascript">
+					var autocompleteUrl = '/search.html?ajax=true';
+					jQuery(document).ready(function($) {
+   						activateAjaxSearch();
+					});
+   				</script>
+			</div>
+		</div>
+	</div>
+</div>
+<!--==============================content=================================-->
+<section id="content">
+<div class="container"  itemscope itemtype="http://schema.org/SportsAthlete">
+	<!-- welcome text -->
+	<div class="row">
+		<div class="span12">
+			<div class="page-header1">
+				<h1><span itemprop="name">Emerson Cesário</span><small></small></h1>
+			</div>
+					</div>
+	</div>
+	<div class="row player-details">
+		<div class="span7">
+			<ul class="nav nav-tabs">
+				<li class="active"><a href="#club" data-toggle="tab">Club-statistics</a></li>
+				<li><a href="#country" data-toggle="tab">Country-statistics</a></li>
+				<li><a href="#games" data-toggle="tab">Games</a></li>
+							</ul>
+			<div class="tab-content">
+				<div class="tab-pane active" id="club">
+				<table class="table clubs table-hover table-condensed table-striped sortable">
+	<thead>
+		<tr>
+			<th class="marked"></th>
+			<th class="season"><a  translationCount=""  class="sortable"  href="/player/48967/Emerson_Cesario.html?clubsort=score.year&amp;clubdirection=asc&amp;clubpage=1" >Season</a>
+<i   	 class="sortable"  ></i></th>
+			<th colspan="2">Club</th>		
+			<th class="stats matches"><abbr title="# of Matches"><a  translationCount=""  class="sortable"  href="/player/48967/Emerson_Cesario.html?clubsort=score.matches&amp;clubdirection=asc&amp;clubpage=1" >M</a>
+<i   	 class="sortable"  ></i></abbr></th>
+			<th class="stats goals"><abbr title="# of Goals"><a  translationCount=""  class="sortable"  href="/player/48967/Emerson_Cesario.html?clubsort=score.goals&amp;clubdirection=asc&amp;clubpage=1" >G</a>
+<i   	 class="sortable"  ></i></abbr></th>
+			<th class="rank"><abbr title="Rank">R</abbr></th>
+			<th class="champion"><abbr title="League champion">Cha</abbr></th>
+			<th class="cup"><abbr title="Cup winner">Cup</abbr></th>
+		</tr>
+	</thead>
+	<tbody>
+																			<tr>
+		<td class="marked" data-sortvalue="yes">
+				<img src="/bundles/nftbootstrapfrontend/img/active.png" title="National Player" alt="National Player" />
+				</td>
+		<td	class="season" data-sortvalue="1">2012</td>
+		<td	class="flag" data-sortvalue="Thailand">
+			<a href="/country/186/2012/Thailand.html">
+									<img src="/uploads/country_images/miniflag/tha.gif" alt="" />
+			</a>
+		</td>
+		<td	class="club" data-sortvalue="Chiangrai_United">
+			<a href="/club/12968/2012_2/Chiangrai_United.html"  >
+				Chiangrai United
+			</a>
+		</td>
+		<td	class="stats matches" data-sortvalue="2">
+			2
+					</td>
+		<td	class="stats goals" data-sortvalue="0">
+			0
+					</td>
+		<td class="rank" data-sortvalue="9">
+			9
+			 
+						(<abbr title="T-League (1. League)">I</abbr>)
+					</td>
+		<td class="champion" data-sortvalue="no">
+			-		</td>
+		<td class="cup" data-sortvalue="no">
+			-		</td>
+	</tr>
+																	<tr>
+		<td class="marked" data-sortvalue="yes">
+				<img src="/bundles/nftbootstrapfrontend/img/active.png" title="National Player" alt="National Player" />
+				</td>
+		<td	class="season" data-sortvalue="2">2012</td>
+		<td	class="flag" data-sortvalue="Brazil">
+			<a href="/country/28/2012/Brazil.html">
+									<img src="/uploads/country_images/miniflag/bra.gif" alt="" />
+			</a>
+		</td>
+		<td	class="club" data-sortvalue="Goiania_Ec_Go">
+			<a href="/club/12830/2012_2/Goiania_Ec_Go.html"  >
+				Goiânia EC (GO)
+			</a>
+		</td>
+		<td	class="stats matches" data-sortvalue="-1">
+			-
+					</td>
+		<td	class="stats goals" data-sortvalue="-1">
+			-
+					</td>
+		<td class="rank" data-sortvalue="-1">
+			-
+			 
+						(<abbr title="Campeonato Goiano 2 (6. League)">VI</abbr>)
+					</td>
+		<td class="champion" data-sortvalue="no">
+			-		</td>
+		<td class="cup" data-sortvalue="no">
+			-		</td>
+	</tr>
+																	<tr>
+		<td class="marked" data-sortvalue="no">
+				</td>
+		<td	class="season" data-sortvalue="3">2011</td>
+		<td	class="flag" data-sortvalue="Brazil">
+			<a href="/country/28/2011/Brazil.html">
+									<img src="/uploads/country_images/miniflag/bra.gif" alt="" />
+			</a>
+		</td>
+		<td	class="club" data-sortvalue="Mirassol_Fc_Sp">
+			<a href="/club/3743/2011_2/Mirassol_Fc_Sp.html"  >
+				Mirassol FC (SP)
+			</a>
+		</td>
+		<td	class="stats matches" data-sortvalue="-1">
+			-
+					</td>
+		<td	class="stats goals" data-sortvalue="-1">
+			-
+					</td>
+		<td class="rank" data-sortvalue="6">
+			6
+			 
+						(<abbr title="Série D (4. League)">IV</abbr>)
+					</td>
+		<td class="champion" data-sortvalue="no">
+			-		</td>
+		<td class="cup" data-sortvalue="no">
+			-		</td>
+	</tr>
+		</tbody>
+	<tfoot>
+		<tr>
+			<td colspan="4"></td>
+			<td><strong>2</strong></td>
+			<td><strong>0</strong></td>
+			<td colspan="3"></td>
+		</tr>
+	</tfoot>
+</table>				</div>
+				<div class="tab-pane" id="country">
+				<table class="table clubs table-hover table-condensed table-striped sortable">
+	<thead>
+		<tr>
+			<th colspan="3"></th>
+			<th colspan="3" style="text-align: center;">Fifa</th>
+			<th colspan="3" style="text-align: center;">Non Fifa</th>
+		</th>
+		<tr>
+			<th class="season"><a  translationCount=""  class="sortable"  href="/player/48967/Emerson_Cesario.html?countrysort=score.year&amp;countrydirection=asc&amp;countrypage=1" >Season</a>
+<i   	 class="sortable"  ></i></th>
+			<th colspan="2">Country</th>
+			<th class="stats matches"><abbr title="# of Matches"><a  translationCount=""  class="sortable"  href="/player/48967/Emerson_Cesario.html?countrysort=score.matches&amp;countrydirection=asc&amp;countrypage=1" >M</a>
+<i   	 class="sortable"  ></i></abbr></th>
+			<th class="stats exchanges"><abbr title="# of Substitutions"><a  translationCount=""  class="sortable"  href="/player/48967/Emerson_Cesario.html?countrysort=score.substitutions&amp;countrydirection=asc&amp;countrypage=1" >S</a>
+<i   	 class="sortable"  ></i></abbr></th>
+			<th class="stats goals"><abbr title="# of Goals"><a  translationCount=""  class="sortable"  href="/player/48967/Emerson_Cesario.html?countrysort=score.goals&amp;countrydirection=asc&amp;countrypage=1" >G</a>
+<i   	 class="sortable"  ></i></abbr></th>
+			<th class="stats matches"><abbr title="# of Matches"><a  translationCount=""  class="sortable"  href="/player/48967/Emerson_Cesario.html?countrysort=score.nonFifaMatches&amp;countrydirection=asc&amp;countrypage=1" >M</a>
+<i   	 class="sortable"  ></i></abbr></th>
+			<th class="stats exchanges"><abbr title="# of Substitutions"><a  translationCount=""  class="sortable"  href="/player/48967/Emerson_Cesario.html?countrysort=score.nonFifaSubstitutions&amp;countrydirection=asc&amp;countrypage=1" >S</a>
+<i   	 class="sortable"  ></i></abbr></th>
+			<th class="stats goals"><abbr title="# of Goals"><a  translationCount=""  class="sortable"  href="/player/48967/Emerson_Cesario.html?countrysort=score.nonFifaGoals&amp;countrydirection=asc&amp;countrypage=1" >G</a>
+<i   	 class="sortable"  ></i></abbr></th>
+		</tr>
+	</thead>
+	<tbody>
+													<tr>
+			<td class="season" data-sortvalue="2014">
+				2014
+			</td>
+			<td class="flag" data-sortvalue="East_Timor">
+												<a href="/country/229/2014/East_Timor.html">
+					<img src="/uploads/country_images/miniflag/tls.gif" alt="East Timor"  style="vertical-align: middle;" />
+				</a>
+			</td>
+			<td class="country" data-sortvalue="East Timor_A_male">
+								<a href="/country/229/2014/East_Timor.html">
+				East Timor
+				</a>
+								
+			</td>
+			<td class="stats matches" data-sortvalue="-1">
+				-
+							</td>
+			<td class="stats exchanges" data-sortvalue="-1">
+				-
+							</td>
+			<td class="stats goals" data-sortvalue="-1">
+				-
+							</td>
+			<td class="stats matches" data-sortvalue="-1">
+				-
+							</td>
+			<td class="stats exchanges" data-sortvalue="-1">
+				-
+							</td>
+			<td class="stats goals" data-sortvalue="-1">
+				-
+							</td>
+		</tr>
+							<tr>
+			<td class="season" data-sortvalue="2013">
+				2013
+			</td>
+			<td class="flag" data-sortvalue="East_Timor">
+												<a href="/country/229/2013/East_Timor.html">
+					<img src="/uploads/country_images/miniflag/tls.gif" alt="East Timor"  style="vertical-align: middle;" />
+				</a>
+			</td>
+			<td class="country" data-sortvalue="East Timor_A_male">
+								<a href="/country/229/2013/East_Timor.html">
+				East Timor
+				</a>
+								
+			</td>
+			<td class="stats matches" data-sortvalue="-1">
+				-
+							</td>
+			<td class="stats exchanges" data-sortvalue="-1">
+				-
+							</td>
+			<td class="stats goals" data-sortvalue="-1">
+				-
+							</td>
+			<td class="stats matches" data-sortvalue="-1">
+				-
+							</td>
+			<td class="stats exchanges" data-sortvalue="-1">
+				-
+							</td>
+			<td class="stats goals" data-sortvalue="-1">
+				-
+							</td>
+		</tr>
+							<tr>
+			<td class="season" data-sortvalue="2012">
+				2012
+			</td>
+			<td class="flag" data-sortvalue="East_Timor">
+												<a href="/country/229/2012/East_Timor.html">
+					<img src="/uploads/country_images/miniflag/tls.gif" alt="East Timor"  style="vertical-align: middle;" />
+				</a>
+			</td>
+			<td class="country" data-sortvalue="East Timor_A_male">
+								<a href="/country/229/2012/East_Timor.html">
+				East Timor
+				</a>
+								
+			</td>
+			<td class="stats matches" data-sortvalue="4">
+				4
+							</td>
+			<td class="stats exchanges" data-sortvalue="0">
+				0
+							</td>
+			<td class="stats goals" data-sortvalue="0">
+				0
+							</td>
+			<td class="stats matches" data-sortvalue="0">
+				0
+							</td>
+			<td class="stats exchanges" data-sortvalue="0">
+				0
+							</td>
+			<td class="stats goals" data-sortvalue="0">
+				0
+							</td>
+		</tr>
+		</tbody>
+	<tfoot>
+		<tr>
+			<td colspan="3"></td>
+			<td><strong>4</strong></td>
+			<td><strong>0</strong></td>
+			<td><strong>0</strong></td>
+			<td><strong>0</strong></td>
+			<td><strong>0</strong></td>
+			<td><strong>0</strong></td>
+		</tr>
+	</tfoot>
+</table>				</div>
+				<div class="tab-pane" id="games">
+				<table class="table matches table-condensed table-hover sortable">
+	<thead>
+		<tr>
+			<th class="date"><a  translationCount=""  class="sortable"  href="/player/48967/Emerson_Cesario.html?matchsort=match.playDate&amp;matchdirection=asc&amp;matchpage=1" >Date</a>
+<i   	 class="sortable"  ></i></th>
+			<th colspan="2" class="teams home">Home Team</th>
+			<th colspan="2" class="teams away">Away Team</th>
+			<th class="result">Result</th>
+			<th class="event">Event</th>
+			<th class="stats goals"><abbr title="# of goals">G</abbr></th>
+			<th class="stats yellowcards"><abbr title="# of yellow cards">YC</abbr></th>
+			<th class="stats yellowredcards"><abbr title="# of yellow red cards">YRC</abbr></th>
+			<th class="stats redcards"><abbr title="# of red cards">RC</abbr></th>
+		</tr>
+	</thead>
+	<tbody>
+					
+							
+						
+						
+					
+								 			 				
+																													<tr class="defeat" itemscope itemprop="event" itemtype="http://schema.org/SportsMatch">
+		<td class="date" itemprop="startDate" data-sortvalue="1350079200">2012-10-13</td>
+			<td class="teams home winner" itemprop="competitors" itemscope="itemscope" itemtype="http://schema.org/SportsMatchCompetitor">
+								<div itemprop="team" itemscope="itemscope" itemtype="http://schema.org/SportsTeam/Soccer">
+					<a href="/country/30/2012/Brunei.html"
+					class="winner" itemprop="url">
+					<span itemprop="name">Brunei</span>
+					</a>
+				</div>
+							</td>
+			<td class="flag home winner">
+							<a href="/country/30/2012/Brunei.html">
+					<img src="/uploads/country_images/miniflag/bru.gif" alt="Brunei"  style="vertical-align: middle;" />
+				</a>
+				
+			</td>
+			<td class="flag away ">
+							<a href="/country/229/2012/East_Timor.html">
+					<img src="/uploads/country_images/miniflag/tls.gif" alt="East Timor"  style="vertical-align: middle;" />
+				</a>
+				
+			</td>
+			<td class="teams away " itemprop="competitors" itemscope="itemscope" itemtype="http://schema.org/SportsMatchCompetitor">
+								<div itemprop="team" itemscope="itemscope" itemtype="http://schema.org/SportsTeam/Soccer">
+					<a href="/country/229/2012/East_Timor.html"
+					class="" itemprop="url">
+					<span itemprop="name">East Timor</span>
+					</a>
+				</div>
+							</td>
+			<td class="result">
+				<a href="/matches/report/9600/Brunei_East_Timor.html"">2:1</a>
+				<div style="display: none" itemprop="name">Brunei vs. East Timor</div></td>
+			<td class="event" >
+																							<a href="/matches/tournament/42/2012/872/ASEAN_Football_Championship.html#matches-872" itemprop="superEvent">
+				AFF Cup 2012 - Group Stage
+				</a>
+							
+			</td>
+			<td>0</td>
+			<td>1</td>
+			<td>0</td>
+			<td>0</td>
+	</tr>
+							
+						
+						
+					
+								 			 				
+																													<tr class="win" itemscope itemprop="event" itemtype="http://schema.org/SportsMatch">
+		<td class="date" itemprop="startDate" data-sortvalue="1349733600">2012-10-09</td>
+			<td class="teams home winner" itemprop="competitors" itemscope="itemscope" itemtype="http://schema.org/SportsMatchCompetitor">
+								<div itemprop="team" itemscope="itemscope" itemtype="http://schema.org/SportsTeam/Soccer">
+					<a href="/country/229/2012/East_Timor.html"
+					class="winner" itemprop="url">
+					<span itemprop="name">East Timor</span>
+					</a>
+				</div>
+							</td>
+			<td class="flag home winner">
+							<a href="/country/229/2012/East_Timor.html">
+					<img src="/uploads/country_images/miniflag/tls.gif" alt="East Timor"  style="vertical-align: middle;" />
+				</a>
+				
+			</td>
+			<td class="flag away ">
+							<a href="/country/101/2012/Laos.html">
+					<img src="/uploads/country_images/miniflag/lao.gif" alt="Laos"  style="vertical-align: middle;" />
+				</a>
+				
+			</td>
+			<td class="teams away " itemprop="competitors" itemscope="itemscope" itemtype="http://schema.org/SportsMatchCompetitor">
+								<div itemprop="team" itemscope="itemscope" itemtype="http://schema.org/SportsTeam/Soccer">
+					<a href="/country/101/2012/Laos.html"
+					class="" itemprop="url">
+					<span itemprop="name">Laos</span>
+					</a>
+				</div>
+							</td>
+			<td class="result">
+				<a href="/matches/report/9585/East_Timor_Laos.html"">3:1</a>
+				<div style="display: none" itemprop="name">East Timor vs. Laos</div></td>
+			<td class="event" >
+																							<a href="/matches/tournament/42/2012/872/ASEAN_Football_Championship.html#matches-872" itemprop="superEvent">
+				AFF Cup 2012 - Group Stage
+				</a>
+							
+			</td>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+	</tr>
+							
+						
+						
+					
+								 			 				
+																													<tr class="defeat" itemscope itemprop="event" itemtype="http://schema.org/SportsMatch">
+		<td class="date" itemprop="startDate" data-sortvalue="1349560800">2012-10-07</td>
+			<td class="teams home winner" itemprop="competitors" itemscope="itemscope" itemtype="http://schema.org/SportsMatchCompetitor">
+								<div itemprop="team" itemscope="itemscope" itemtype="http://schema.org/SportsTeam/Soccer">
+					<a href="/country/230/2012/Myanmar.html"
+					class="winner" itemprop="url">
+					<span itemprop="name">Myanmar</span>
+					</a>
+				</div>
+							</td>
+			<td class="flag home winner">
+							<a href="/country/230/2012/Myanmar.html">
+					<img src="/uploads/country_images/miniflag/mya.gif" alt="Myanmar"  style="vertical-align: middle;" />
+				</a>
+				
+			</td>
+			<td class="flag away ">
+							<a href="/country/229/2012/East_Timor.html">
+					<img src="/uploads/country_images/miniflag/tls.gif" alt="East Timor"  style="vertical-align: middle;" />
+				</a>
+				
+			</td>
+			<td class="teams away " itemprop="competitors" itemscope="itemscope" itemtype="http://schema.org/SportsMatchCompetitor">
+								<div itemprop="team" itemscope="itemscope" itemtype="http://schema.org/SportsTeam/Soccer">
+					<a href="/country/229/2012/East_Timor.html"
+					class="" itemprop="url">
+					<span itemprop="name">East Timor</span>
+					</a>
+				</div>
+							</td>
+			<td class="result">
+				<a href="/matches/report/9548/Myanmar_East_Timor.html"">2:1</a>
+				<div style="display: none" itemprop="name">Myanmar vs. East Timor</div></td>
+			<td class="event" >
+																							<a href="/matches/tournament/42/2012/872/ASEAN_Football_Championship.html#matches-872" itemprop="superEvent">
+				AFF Cup 2012 - Group Stage
+				</a>
+							
+			</td>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+	</tr>
+							
+						
+						
+					
+								 			 				
+																													<tr class="win" itemscope itemprop="event" itemtype="http://schema.org/SportsMatch">
+		<td class="date" itemprop="startDate" data-sortvalue="1349388000">2012-10-05</td>
+			<td class="teams home " itemprop="competitors" itemscope="itemscope" itemtype="http://schema.org/SportsMatchCompetitor">
+								<div itemprop="team" itemscope="itemscope" itemtype="http://schema.org/SportsTeam/Soccer">
+					<a href="/country/34/2012/Cambodia.html"
+					class="" itemprop="url">
+					<span itemprop="name">Cambodia</span>
+					</a>
+				</div>
+							</td>
+			<td class="flag home ">
+							<a href="/country/34/2012/Cambodia.html">
+					<img src="/uploads/country_images/miniflag/cam.gif" alt="Cambodia"  style="vertical-align: middle;" />
+				</a>
+				
+			</td>
+			<td class="flag away winner">
+							<a href="/country/229/2012/East_Timor.html">
+					<img src="/uploads/country_images/miniflag/tls.gif" alt="East Timor"  style="vertical-align: middle;" />
+				</a>
+				
+			</td>
+			<td class="teams away winner" itemprop="competitors" itemscope="itemscope" itemtype="http://schema.org/SportsMatchCompetitor">
+								<div itemprop="team" itemscope="itemscope" itemtype="http://schema.org/SportsTeam/Soccer">
+					<a href="/country/229/2012/East_Timor.html"
+					class="winner" itemprop="url">
+					<span itemprop="name">East Timor</span>
+					</a>
+				</div>
+							</td>
+			<td class="result">
+				<a href="/matches/report/9552/Cambodia_East_Timor.html"">1:5</a>
+				<div style="display: none" itemprop="name">Cambodia vs. East Timor</div></td>
+			<td class="event" >
+																							<a href="/matches/tournament/42/2012/872/ASEAN_Football_Championship.html#matches-872" itemprop="superEvent">
+				AFF Cup 2012 - Group Stage
+				</a>
+							
+			</td>
+			<td>0</td>
+			<td>1</td>
+			<td>0</td>
+			<td>0</td>
+	</tr>
+		</tbody>
+	<tfoot>
+		<tr>
+			<td colspan="7"></td>
+			<td><strong>0</strong></td>
+			<td><strong>2</strong></td>
+			<td><strong>0</strong></td>
+			<td><strong>0</strong></td>
+		</tr>
+	</tfoot>
+</table>				</div>
+							</div>
+		</div>
+		<div class="span5">
+			<div class="text-widget player-info" >
+				<h2>Stats</h2>
+<div class="row">
+	<div class="span1">
+														<img src="/uploads/country_images/flag/bra.gif" alt="" class="img-polaroid country-flag" />
+							</div>
+	<div class="span2" style="margin-left: 10px; width: 190px;">
+		<ul class="stats" >
+			<li><strong>Position: </strong><span itemprop="positionName">Goalkeeper</span> (<span itemprop="positionAbbreviation">GK</span>)</li>
+						<li>
+				<strong>Other positions:</strong>
+									 
+							</li>
+						<li><strong>D.O.B.: </strong>
+						<span itemprop="birthDate">1990-02-16</span>
+						</li>
+										<li>
+					<strong>Place of birth: </strong>
+					<span itemprop="Person/birthPlace">Campo Mourão (PR)</span>
+										<span itemprop="nationality"><small style="display: none">(Brazil)</small></span>
+									</li>
+									<li><strong>Height: </strong><span itemprop="Person/height">1.98m</span></li>
+							
+		</ul>
+	</div>
+	<div class="span2" style="width: 128px; margin-left: 10px;">
+							<a title="Submit a photo of this player" href="/player/picture/48967/Emerson_Cesario.html"><img src="/media/cache/players_page/bundles/nftfrontend/images/pix/player_dummy.gif" alt="No image available"  style="margin-top: -10px"/></a>
+			</div>
+</div>
+<div class="row" style="margin-top: 1em;"> 
+	<div class="offset2 span2" style="text-align: right;"> 
+		<a class="btn btn-small btn-info" style="color: white" href="/player/picture/48967/Emerson_Cesario.html"><i class="icon-picture" style="font-size: 1.4em;"></i> Add picture</a> 
+	</div> 
+</div>
+<hr />
+<h2 itemprop="affiliation">East Timor</h2>
+
+<div class="row">
+	<div class="span1">
+				<img src="/uploads/country_images/flag/tls.gif" alt="" class="img-polaroid country-flag" />
+			</div>
+	<div class="span2" style="margin-left: 10px; width: 190px;">
+		<ul class="stats">
+			<li><strong>Fifa Games: </strong>4</li>
+			<li><strong>Fifa Goals: </strong>0</li>
+			<li><strong>Non Fifa Games: </strong>0</li>
+			<li><strong>Non Fifa Goals: </strong>0</li>
+		</ul>
+	</div>
+	<div class="span1">
+				<img src="/uploads/country_images/fifa/logo_tls.gif" alt="" style="margin-top: -10px" />
+			</div>
+</div>
+<hr />			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+	<div class="row">
+		<div class="span12">
+			<div id="socialshareprivacy"></div>
+		</div>
+	</div>
+</div>
+</section>
+<!--==============================footer=================================-->
+<footer>
+	<div class="section-3">
+		<div class="container">
+			<div class="row">
+				<!-- about us -->
+				<div class="span3">
+					<h2>Info</h2>
+					<div class="clearfix p1">
+						<p class="text-info"><i>© 2004-2014 by National Football Teams – all rights reserved.</i></p>
+						Unauthorized publishing and copying of this website's content and images strictly prohibited!<br /><br />
+						Last update: 2014-03-28 02:50:06					</div>
+					<ul id="social" class="tooltip-demo">
+						<li><a href="https://www.facebook.com/pages/National-Football-Teams/207752652580092" title="Facebook"><img alt="Facebook" src="/bundles/nftbootstrapfrontend/img/social_icons/facebook.png" alt="Facebook"></a></li>
+					</ul>
+				</div>
+				<!-- links -->
+				<div class="span3">
+					<h2>Useful Links</h2>
+					<ul class="list">
+						<li><a href="/links.html">Links to other relevant pages</a></li>
+						<li><a href="/faq.html">Frequently Asked Questions</a></li>
+						<li><a href="http://www.national-teams.com/forum/index.php?c=1">Access the NFT forums</a></li>
+						<li><a href="/credits.html">Credits and thanks</a></li>
+						<li><a href="/photo-notes.html">Want to share a player picture?</a></li>
+					</ul>
+				</div>
+				<!-- latest blog -->
+				 		<div class="span3">
+		<h2>Latest player pix</h2>
+		<ul class="footer-list-news">
+									<li>
+				<figure class="img-circle">
+					<a href="/player/29939/Dennis_Banda.html">
+						<img src="/media/cache/news_page/uploads/person_photos/Dennis_Banda_29939-53349ae12b2a9.jpeg" alt="Dennis_Banda" class="img-circle">
+					</a>
+				</figure>
+				<div class="extra-wrap">
+					<p><a href="/player/29939/Dennis_Banda.html">Dennis Banda</a></p>
+					<span>2014-03-27</span> 
+				</div>
+			</li>
+									<li>
+				<figure class="img-circle">
+					<a href="/player/27996/Abdou_Illa_Zakariyaou.html">
+						<img src="/media/cache/news_page/uploads/person_photos/Abdou_Illa_Zakariyaou_27996-533347b063dac.jpeg" alt="Abdou_Illa_Zakariyaou" class="img-circle">
+					</a>
+				</figure>
+				<div class="extra-wrap">
+					<p><a href="/player/27996/Abdou_Illa_Zakariyaou.html">Abdou Illa Zakariyaou</a></p>
+					<span>2014-03-26</span> 
+				</div>
+			</li>
+									<li>
+				<figure class="img-circle">
+					<a href="/player/26986/Mahamadou_Ousseini.html">
+						<img src="/media/cache/news_page/uploads/person_photos/Mahamadou_Ousseini_26986-5331ffed81740.jpeg" alt="Mahamadou_Ousseini" class="img-circle">
+					</a>
+				</figure>
+				<div class="extra-wrap">
+					<p><a href="/player/26986/Mahamadou_Ousseini.html">Mahamadou Ousseini</a></p>
+					<span>2014-03-25</span> 
+				</div>
+			</li>
+					</ul>
+	</div>
+							<div class="span3">
+					<h2>QR Code for this page</h2>
+					<div class="clearfix p1">
+						<div id="qrcode"></div>
+						<script type="text/javascript">jQuery('#qrcode').uQr({create : true, size: 196, type : "url", url : "http://www.national-football-teams.com/player/48967/Emerson_Cesario.html"});</script>
+					</div> 
+				</div>				 
+			</div>
+		</div>
+	</div>
+	<!-- footer 2 -->
+	<div class="footer-2">
+		<div class="container">
+			<div class="row">
+				<div class="span12">national football teams.com &copy; 2004-2014</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- Piwik -->  
+<script type="text/javascript"> 
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://piwik.maenner-ans-netz.de/" : "http://piwik.maenner-ans-netz.de/"); 
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E")); 
+</script><script type="text/javascript"> 
+try { 
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 3); 
+piwikTracker.trackPageView(); 
+piwikTracker.enableLinkTracking(); 
+} catch( err ) {} 
+</script><noscript><p><img src="http://piwik.maenner-ans-netz.de/piwik.php?idsite=3" style="border:0" alt="" /></p></noscript> 
+<!-- End Piwik Tracking Code -->
+
+
+
+</body>
+</html>

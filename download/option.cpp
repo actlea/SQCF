@@ -442,7 +442,7 @@ void CountryPage(const string& source, _sNTeam& s_nteam, const string&name)
 		club=extract(club);
 		//存入数据
 		oPlayer._eName=ename;
-		oPlayer._age=birthday;
+		oPlayer._birthdate=birthday;
 		oPlayer._position=position;
 		oPlayer._clubName=club;
 		(s_nteam._players).push_back(oPlayer);
@@ -454,7 +454,7 @@ void CountryPage(const string& source, _sNTeam& s_nteam, const string&name)
 	}// end while
 
 	
-#pragma region 提取coach数据和country数据
+#pragma region country数据
 
 		s_nteam._eCNAME = name; //国家英文名
 		if(extractImageUrl(pageSrc,"/flag",s_nteam._FlagLink))
@@ -465,7 +465,7 @@ void CountryPage(const string& source, _sNTeam& s_nteam, const string&name)
 			cout << name << " flag not found!" << endl;
 		tablefile << s_nteam._FlagLink +"\n";
 		//coach info
-		getCoach(pageSrc,oCoach);
+		//getCoach(pageSrc,oCoach);
 		
 #pragma endregion
 
@@ -479,9 +479,80 @@ void CountryPage(const string& source, _sNTeam& s_nteam)
 
 
 //提取球员信息
+
+//************************************
+// Method:    PlayerPage
+// FullName:  PlayerPage
+// Access:    public 
+// Returns:   void
+// Qualifier:
+// Parameter: const string & source
+// Parameter: _sPlayer & s_player
+// Other:提取player的position,other position, D.O.B:,Place Of Birth:,Height...
+//************************************
 void PlayerPage(const string& source,_sPlayer& s_player)
 {
-	
+	//string position;
+	string otherposition;
+	string birthplace;
+	string height;
+	string photo;
+	string tmpSrc;
+
+	HTML::ParserDom parser;
+	tree<HTML::Node> dom = parser.parseTree(source);
+	tree<HTML::Node>::iterator it = dom.begin();
+	tree<HTML::Node>::iterator end = dom.end();
+
+	tree<HTML::Node>::iterator it_child = dom.begin();
+	tree<HTML::Node>::iterator end_child = dom.end();
+	for (; it != end; ++it)
+	{
+		if(!it->isTag())  
+			continue ;
+		if(_strcmpi(it->tagName().c_str(),"div")==0)
+		{
+			it->parseAttributes();
+			
+			//imgSrc = it->attribute("src").second;
+			//找到球员信息块
+			if(_strcmpi(it->attribute("class").second.c_str(),"text-widget player-info")==0)
+			{
+				//完整的结构包含4部分，position,other position, D.O.B:,Place Of Birth:,Height,
+				//Fifa Games,Fifa Goals,Non Fifa Games,Non Fifa Goals
+				it_child = it.node->first_child;
+				end_child = it.node->last_child;
+				for(;it_child!=end_child;++it_child)
+				{
+					//if(!it_child->isTag())
+					//	continue;
+					//photo
+					if(_strcmpi(it_child->tagName().c_str(),"img")==0)
+					{
+						tmpSrc=it_child->attribute("src").second.c_str();
+						if(tmpSrc.find("players_page")!=string::npos)
+							photo = tmpSrc;							
+					}
+					if((!it_child->isTag()) && (!it_child->isComment()))
+					{
+						tmpSrc = it_child.node->data;
+						if(tmpSrc.find("Other positions")!=string::npos)
+							otherposition = tmpSrc;
+						if(tmpSrc.find("Place of birth")!=string::npos)
+							birthplace = tmpSrc;
+						if(tmpSrc.find("Height")!=string::npos)
+							height=tmpSrc;
+
+					}
+				}// end for it_child
+			}//end if class
+			
+		}//end if div
+	}//end if it
+	s_player._birthPlace=birthplace;
+	s_player._height=height;
+	s_player._imageLink=photo;
+	s_player._otherPosition=otherposition;
 }
 
 //获取date
@@ -755,96 +826,124 @@ bool extractImageUrl(const string&pageSrc, const string& tag_mark, string &image
 {
 	
 	
-	string::size_type pos = 0,len = pageSrc.length();
+	//string::size_type pos = 0,len = pageSrc.length();
 	
-	string tmpSrc;
-	string imgStr=""; //包含img的字段<img.../>
-	while((pos=NextElement(pageSrc,pos,"img",tmpSrc,true))<len)
-	{
-		if(tmpSrc.find(tag_mark)!=string::npos)
-		{
-			imgStr = GetTag(tmpSrc,"src=\"","\"",1);
-			eraseTag(imgStr,' '); //剔除地址中的空格
-			break;
-		}
-	}
-	if(pos>=len)  return false;
-	imageUrl = imgStr;
-	return true;
+	////string tmpSrc;
+	////string imgStr=""; //包含img的字段<img.../>
+	//////while((pos=NextElement(pageSrc,pos,"img",tmpSrc,true))<len)
+	//////{
+	//////	if(tmpSrc.find(tag_mark)!=string::npos)
+	//////	{
+	//////		imgStr = GetTag(tmpSrc,"src=\"","\"",1);
+	//////		eraseTag(imgStr,' '); //剔除地址中的空格
+	//////		break;
+	//////	}
+	//////}
 
-}
-
-bool getCoach(const string&pageSrc, _Coach& oCoach)
-{
-	string html = pageSrc;
-	string coachDiv;
+	////if(pos>=len)  return false;
+	////imageUrl = imgStr;
+	////return true;
+	
+	string imgSrc;
 	HTML::ParserDom parser;
-	tree<HTML::Node> dom = parser.parseTree(html);
-	
-	//cout << dom << endl;
-	//dump all div
+	tree<HTML::Node> dom = parser.parseTree(pageSrc);
 	tree<HTML::Node>::iterator it = dom.begin();
 	tree<HTML::Node>::iterator end = dom.end();
-	tree<HTML::Node>::iterator it_child = dom.begin();
-	tree<HTML::Node>::iterator end_child = dom.end();
-	
-	//dom.child()
 	for (; it != end; ++it)
+	{
+		if(!it->isTag())  
+			continue ;
+		if(_strcmpi(it->tagName().c_str(),"img")==0)
 		{
-			if (strcmp(it->tagName().c_str(), "div") == 0)
+			it->parseAttributes();
+			imgSrc = it->attribute("src").second;
+			if(imgSrc.find(tag_mark)!=string::npos)
 			{
-				it->parseAttributes();
-				
-				//cout << it->closingText() << endl;//返回的是标签的结束标志</div>
-				//cout << it->attribute("href").second << endl; //返回的事href属性的值
-				//提取coach模块
-				if(strcmp(it->attribute("class").second.c_str(),"text-widget player-info")==0)
-				{
-					string str;
-
-					/*int numofChild = dom.number_of_children(it);
-					it_child = it.node->first_child;
-					end_child = it.node->last_child;
-					cout << "first child of " << it->text() << " is " << it_child->tagName() << endl;
-					cout << "last child of " << it->text() << " is " << end_child->tagName() << endl;
-					int i = 0;
-					for(;it_child!=end_child;++it_child,++i)
-					{
-						str += it_child->text();
-						if(!it_child->isTag())
-						{
-							cout << i << " : " <<it_child->text() << endl;
-						}
-					}
-					cout << str << endl;*/
-					//it_child = dom.next_sibling(it);
-					//cout << it_child->text() <<' ' << it_child->tagName() << endl;
-					//it_child = dom.previous_sibling(it);
-					//cout << it_child->text() <<' ' << it_child->tagName() << endl;
-					//it_child = dom.child(it,1);
-					//cout << it_child->text() <<' ' << it_child->tagName() << endl;
-					////dom.next_sibling()
-					//cout << it->attribute("class").second << endl;
-					//it->closingText(coachDiv);
-					//cout << "closingText()= " << coachDiv << endl;
-					//cout <<" it->text()=" << it->text() << endl;
-					//cout << "it->tagName()=" << it->tagName() << endl;
-					//it->closingText(coachDiv);
-			//		walk_tree(dom);
-					walk_tree(it,str);
-					cout << str << endl;
-				}
+				imageUrl = imgSrc;
+				break;
 			}
+			imgSrc.clear();
 		}
+	}
+	if(imageUrl.size()>0)
+		return true;
+	return false;
 
-	string::size_type pos = 0;
-	string element = "";
-	string tag_mark = "player-info"; //包含coach标签的关键字段
-
-	pos=pageSrc.find(tag_mark);
-	string div_element = element;
-	return true;
 }
+
+//bool getCoach(const string&pageSrc, _Coach& oCoach)
+//{
+//	string html = pageSrc;
+//	string coachDiv;
+//	HTML::ParserDom parser;
+//	tree<HTML::Node> dom = parser.parseTree(html);
+//	
+//	//cout << dom << endl;
+//	//dump all div
+//	tree<HTML::Node>::iterator it = dom.begin();
+//	tree<HTML::Node>::iterator end = dom.end();
+//	tree<HTML::Node>::iterator it_child = dom.begin();
+//	tree<HTML::Node>::iterator end_child = dom.end();
+//	
+//	
+//	//dom.child()
+//	for (; it != end; ++it)
+//	{
+//			if(!it->isTag())  
+//				continue ;
+//
+//			if (strcmp(it->tagName().c_str(), "div") == 0)
+//			{
+//				it->parseAttributes();
+//				//cout << it->closingText() << endl;//返回的是标签的结束标志</div>
+//				//cout << it->attribute("href").second << endl; //返回的事href属性的值
+//				//提取coach模块
+//				if(strcmp(it->attribute("class").second.c_str(),"text-widget player-info")==0)
+//				{
+//					
+//					string str;
+//					string coachName;
+//					string birthdate;
+//					string birthPalce;
+//					string imagelink;
+//					
+//					int numofChild = dom.number_of_children(it);
+//					int it_num = it.number_of_children();
+//					
+//					
+//					it_child = it.node->first_child;
+//					end_child = it.node->last_child;
+//					for(;it_child!=end_child;++it_child)
+//					{
+//						if(!it_child->isTag())  
+//							continue;
+//						//提取教练名称
+//						if(_strcmpi(it_child->tagName().c_str(),"h2")==0)
+//						{
+//							++it_child;
+//							coachName = it_child.node->data;
+//						}
+//						
+//						//提取coach照片,会将国旗的地址覆盖
+//						if(_strcmpi(it_child->tagName().c_str(),"img")==0)
+//						{
+//							imagelink = it_child->attribute("src").second;
+//						}
+//						//提取birthdate
+//
+//						
+//						
+//					str += it_child.node->data;
+//					}// end for it_child
+//				  
+//					
+//					cout << str << endl;
+//				}//end if class
+//			}//end if div
+//		}//end for it
+//	return true;
+//
+//}
 
 void walk_tree( tree<HTML::Node> const & dom )
 {
@@ -857,13 +956,5 @@ void walk_tree( tree<HTML::Node> const & dom )
 	cout<<it->closingText();
 }
 
-void walk_tree( tree<HTML::Node>::iterator it,string & str )
-{
-	tree<HTML::Node>::iterator iter = it.node->first_child;
-	str += iter->text();
-	for ( unsigned i=0; i<iter.number_of_children(); i++ )
-	{
-		walk_tree(iter,str);
-	}
-	str += iter->closingText();
-}
+
+

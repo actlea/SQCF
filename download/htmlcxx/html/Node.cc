@@ -109,3 +109,5 @@ ostream &Node::operator<<(ostream &stream) const {
 	stream << (string)(*this);
 	return stream;
 }
+
+

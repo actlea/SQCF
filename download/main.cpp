@@ -189,15 +189,27 @@ int main(int argc, char* argv[])
 
 /////////////////////////Test///////////////////////////////////////////////////
 	//string pageSrc;
-	string url1 = "http://www.national-football-teams.com/country/5/2014/Andorra.html";
-	string url2 = "http://www.national-football-teams.com/player/362/Roman_Berezovsky.html";
-	string name1,name2;
-	GetUrlName(url1,name1,false);
-	GetUrlName(url2,name2,true);
-	if(ReadFromFile("./Country/Armenia.txt",pageSrc))
-	{
-		CountryPage(pageSrc,sNTeam);
-	}
+#pragma region 提取country页面信息
+	//string url1 = "http://www.national-football-teams.com/country/5/2014/Andorra.html";
+	//string url2 = "http://www.national-football-teams.com/player/362/Roman_Berezovsky.html";
+	//string name1,name2;
+	//GetUrlName(url1,name1,false);
+	//GetUrlName(url2,name2,true);
+	//if(ReadFromFile("./Country/Armenia.txt",pageSrc))
+	//{
+	//	CountryPage(pageSrc,sNTeam);
+	//}
+#pragma endregion
+#pragma  region 提取player页面信息
+	//string playerurl = "www.national-football-teams.com/player/48967/Emerson_Cesario.html";
+	//pageSrc = DownLoadPage(playerurl);
+	//ofstream out;
+	//out.open("./Country/Emerson_Cesario.txt");
+	//out << pageSrc;
+	//out.close();
+	if(ReadFromFile("./Country/Emerson_Cesario.txt",pageSrc))
+		PlayerPage(pageSrc,sPlayer);
+#pragma endregion
 
 
 //Parse some html code

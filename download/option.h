@@ -134,6 +134,5 @@ bool GetUrlName(const string& url,string&name,bool non_end_mark=false);
  * \所以应该以\flag为标签
  */  
 bool extractImageUrl(const string&pageSrc, const string& tag_mark, string &imageUrl);
-bool getCoach(const string&pageSrc, _Coach& oCoach); //提取教练信息
-void walk_tree( tree<HTML::Node> const & dom );
-void walk_tree( tree<HTML::Node>::iterator it,string & str );
+//bool getCoach(const string&pageSrc, _Coach& oCoach); //提取教练信息
+
